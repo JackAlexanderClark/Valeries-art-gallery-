@@ -1,108 +1,74 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# README DOCUMENTATION
 
-Welcome JackAlexanderClark,
+# Milestone Project 1 - User Centric Frontend Development
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Project website link (GitHub Pages)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+![all-devices-black](https://user-images.githubusercontent.com/97599832/180784528-fb95d9a9-796f-4e52-99db-767aa7cd71aa.png)
 
-## Gitpod Reminders
+### UX - First time visitors
+1. First time visitors should immediately understand the purpose of the website. It should clearly represent an art gallery and shop to purchase paintings and cards.
+2. It should be very simplistic to navigate between the different pages; home, gallery and the shop.
+3. I have integrated a YouTube video from my channel, this demonstrates Tintagel's beautiful coast-line to immerse the visitor in the landscape and mindset.
+4. The interactive gallery is easy to use by simply hovering your mouse over the images to reveal text about the item you are currently looking at, such as the title and the name.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### UX - Planning and Implementation 
+1. For the website I want a classic and simple 3 block design for each html page; being a header containing the page title and universal navigation bar, the main middle content block which will contain the image galleries and paragraphs of information and then the bottom footer with an anchor link to take the user back to the top of the page and basic footer information and credits to the painter.
+2. To test the websites funcitonality, I took feedback from a couple user stories and then implemented their feedback.
+3a) User Story 1: Lewis - Understood the website immediately, liked the colour scheme and quickly found their way around to explore the galleries and biography to learn more.
+![cards gallery](https://user-images.githubusercontent.com/97599832/180780315-3c10b16c-9e3d-4a45-9d9d-194a7da112bb.JPG)
 
-`python3 -m http.server`
+## Wireframes and planning using Balsamiq - Webpage layout
+![Wireframe](https://user-images.githubusercontent.com/97599832/180777531-687a10f0-2b01-47cc-b4ae-8c9e61623ef1.JPG)
 
-A blue button should appear to click: _Make Public_,
+### Themes and Design
+1. The primary design theme is a painting frame border to illustrate the artistic purposes - it is present throughout to provide continuity.
+2. Similarly, the colours have been kept to a basic and consistent pallete. Such as light blue (#add8e6) and dark blue (#410cd3).
+3. Another design philosophy was to only use a single h1 tag for each html page for aesthetics and to make important information prominant. 
+4. Finally, the other design pillar was that of simplicity - there is a biography, an interactive gallery and a shop with a contact form to directly contact the artist with an item request, feedback or to purchase an item chosen from the gallery.
 
-Another blue button should appear to click: _Open Browser_.
+### Features
+1. Interactive elements such as; navigation bars and scrollable gallery. 
+2. To allow site users to contact the artist, I implemented a flask backend to take data from the shop form and display the information on a web page to communicate and store information pertaining to peoples interest in the products or their contact information.
+Furthermore, this flask backend to receive data from form submission will be able to be viewed by myself the web developer and then relayed to my grandmother, when I check the file.
+3. I have included facebook links that take the user to facebook, however after speaking to the artist who is my grandmother, she did not want the form.html painting request details to go anywhere or have her personal facebook be attached to this project. Therefore, both the facebook link which works but does not directly take it to her profile and similarly the flask and form.html data is not connected to her email or anything etc. The purpose of this website is to create a "Static" website for a real world artist, therefore I have decided not to make these links live.
+4. Responsive navigation bar: 
+![responsive nav bar](https://user-images.githubusercontent.com/97599832/180781300-f5931121-69e4-4325-ba2d-b219787861fb.JPG)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+# Life Cycle of Project Development
+1. Please follow attached link to the attached PDF in which I have included my website wireframe, early gallery concepts and also the different HTML page wireframes.
+2. I firstly created the home-page first that explains the ethos of the artist and gives people an idea of the "purpose" of the website.
+3. After receiving feedback on flaws and limitations on the website I entered the second phase of the life cycle of the website, illustrated by the description of git commits starting in june/july. In this phase I did a rehaul of the front-end of the website and added a small backend process to capture form data for the artist from users expressing their comments and interest.
+4. To have a detailed look at the project life cycle, read the project repository file on GitHub ("https://github.com/JackAlexanderClark/user-centric-project-1") and the associated messages to each commit update - to get an idea of the website life cycle process.
 
-Another blue button should appear to click: _Open Browser_.
+## Known Bugs and Improvements
+1. Discovered in google dev tools was the broken youtube embedment, which I was able to fix after seeing the error in the console.
+2. Another area of improvement for the website comes from the slow loading of the high resolution images on the gallery.html page. This was brought to my attention and to keep the loading times high I created a new html page to display the cards and the other html page to display the oil paintings - this will reduce the amount of loading on each page by half and also allow me to keep the high resolution on the images and to not sacrifice the quality of the images, which is a highlight of the project. 
+3. I did some rudimentary testing by using a timer on webpage load to when all images were fully loaded on the screen. When all the images were on the lone gallery.html page it took on average (3 repeat tests) 11.4 seconds. Once I split the images between the two new html pages (cards.html and paintings.html) it was reduces to approximately 6.2 seconds between the two - increasing the responsiveness of the website.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+## Code
+1. Code for the flask (app.py and form.html) credited to -> https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data.
+2. Responsive navigation bar credited to -> https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+3. Extra code from the responsive nav bar credited to -> https://adiati.com/how-to-create-a-responsive-navigation-bar-with-flexbox-and-media-queries
+4. CSS media queries credited to stackoverflow -> https://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Technologies, Frameworks and Libraries
+1. HTML
+2. CSS
+3. Bootstrap 
+4. GitHub and GitPod Cloud IDE
+5. Font Awesome
+6. Bootstrap Icons
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Testing
+1. W3C CSS Validator
+2. Chrome Dev Tools
 
-------
+## Credits
+1. Jack Clark 
+2. Valerie Turner
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
