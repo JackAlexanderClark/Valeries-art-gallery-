@@ -1,0 +1,33 @@
+/*---- Here we are creating the interactive nav bar--*/
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.tab:hover {
+    background-color: #ecc1e1;
+    position: relative;
+}
+
+.active {
+    display: block;
+    background-color: #ecc1e1;
+    position: relative;
+    border-style: dashed;
+}
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+}
