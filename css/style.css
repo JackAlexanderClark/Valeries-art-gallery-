@@ -222,6 +222,7 @@ header:after {
     object-fit: contain;
 }
 
+/* Universal text styling */
 p {
     margin: 20px;
     padding: 20px;
