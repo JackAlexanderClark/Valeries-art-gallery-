@@ -108,14 +108,12 @@
         </div>
         </div>
       </div>
-    <div class="row3">
+    <div class="row3" style="padding-top: 5px;">
         <div class="col-sm">
-            <h2>Contact Me:</h2>
-            <p>
-                Please contact me on my email below with any comments, requests or items you would like to purchase. Thank you.
-            </p>
+            <button onclick="emailEffect()" style="color:violet;""> <h2>Click me for Email Address</h2></button>
             <!-- targeted paragraph tag for javascript -->
-            <p id="email"></p>
+            <p id="email" style="font-style:oblique;"></p>
+            <p>Please contact me on my email above with any comments, requests or items you would like to purchase. Thank you.</p>
         </div>
     </div>
 
@@ -148,8 +146,8 @@
         }
 
         // javascript email address effect
-        let i = 0;
-        let emailAddress = "Valerie.Turner@gmail.com";
+        var i = 0;
+        var emailAddress = 'Valerie.Turner@gmail.com';
 
         function emailEffect() {
             if ( i < emailAddress.length ) {
