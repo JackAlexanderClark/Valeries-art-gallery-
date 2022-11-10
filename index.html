@@ -114,7 +114,8 @@
             <p>
                 Please contact me on my email below with any comments, requests or items you would like to purchase. Thank you.
             </p>
-            <h3>Valerie.Turner@gmail.com</h3>
+            <!-- targeted paragraph tag for javascript -->
+            <p id="email"></p>
         </div>
     </div>
 
@@ -129,7 +130,7 @@
 
     <div class="centered">
         <!-- css anchor tag to return to top of page for easier navigation -->
-        <a href="#header">Click here to return to top of the page</a>
+        <a href="#header"><i class="fa-solid fa-arrow-pointer"></i> Click here to return to top of the page</a>
     </div>
 
     <script> 
@@ -145,6 +146,19 @@
                 x.className = "topnav";
             }
         }
+
+        // javascript email address effect
+        let i = 0;
+        let emailAddress = "Valerie.Turner@gmail.com";
+
+        function emailEffect() {
+            if ( i < emailAddress.length ) {
+                document.getElementById("#email").innerHTML += emailAddress.charAt(i);
+                i++;
+                setTimeout(emailEffect, 100);   // 500 millisecond timeout
+            }
+        }
+
     </script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
