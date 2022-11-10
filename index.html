@@ -130,7 +130,7 @@
 
     <div class="centered">
         <!-- css anchor tag to return to top of page for easier navigation -->
-        <a href="#header"><i class="fa-solid fa-arrow-pointer"></i> Click here to return to top of the page</a>
+        <a href="#header"><i class="fa-solid fa-arrow-pointer" style="color:lightskyblue;"></i> Click here to return to top of the page</a>
     </div>
 
     <script> 
@@ -153,9 +153,10 @@
 
         function emailEffect() {
             if ( i < emailAddress.length ) {
-                document.getElementById("#email").innerHTML += emailAddress.charAt(i);
+                document.getElementById("email").innerHTML += emailAddress.charAt(i);
                 i++;
                 setTimeout(emailEffect, 100);   // 500 millisecond timeout
+                console.log("effect completed");
             }
         }
 
