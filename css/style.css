@@ -204,9 +204,18 @@ header:after {
     position: relative;
 }
 
-.wrapper {
+.effect-wrapper {
     width: "500px";
     height: "400px";
+}
+
+/* Text styling for the card and painting images */
+.img-text {
+    text-shadow: 1px 1px 1px blue;
+    font-family: fantasy;
+    font-size: 12px;
+    overflow-y: 20px;
+    overflow-x: 20px;
 }
 
 /* styling valeries web logo */
