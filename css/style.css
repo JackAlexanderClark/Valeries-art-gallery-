@@ -36,9 +36,13 @@ body {
 span {
     font-style: italic;
     font-family:'Times New Roman', Times, serif;
-    font-size: medium;
-    font-weight: 200;
+}
 
+/* image text styling */
+.img-text {
+    font-size: large;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px blueviolet;
 }
 
 .welcome {
@@ -207,13 +211,6 @@ header:after {
 .wrapper {
     width: "500px";
     height: "400px";
-}
-
-/* Text styling for the card and painting images */
-.img-text {
-    text-shadow: 1px 1px 1px blue;
-    font-family: fantasy;
-    font-size: 8px;
 }
 
 /* styling valeries web logo */
