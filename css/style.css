@@ -213,9 +213,7 @@ header:after {
 .img-text {
     text-shadow: 1px 1px 1px blue;
     font-family: fantasy;
-    font-size: 12px;
-    overflow-y: 20px;
-    overflow-x: 20px;
+    font-size: 8px;
 }
 
 /* styling valeries web logo */
