@@ -45,9 +45,13 @@
   <body>
     
 <header>
+    <!-- top anchor head for navigation -->
+    <div>
+        <a id="header"></a>
+    </div>
     <nav class="site-header sticky-top py-1">
         <div class="container d-flex flex-column flex-md-row justify-content-between">
-          <a class="py-2" href="#" aria-label="Product">
+          <a class="py-2" aria-label="Product">
               <img class="web-logo" src="images/val-logo.jpg" alt="vals-web-logo">
           </a>
           <!-- using two classes separated by whitespace -->
@@ -62,39 +66,57 @@
   <section class="jumbotron text-center">
     <div class="container">
         <span class="lead text-muted">
-            <h2>Welcome to my Gallery <i class="fa-solid fa-arrow-pointer"></i></h2>
+            <h2 style="text-decoration:underline;">Welcome to my Gallery <i class="fa-solid fa-arrow-pointer"></i></h2>
             <p>To interact and learn more about my gallery showcase of my work. Simply hover your mouse over a picture to learn more about it.</p>
         </span>
     </div>
-  </section>
-
+  </section>    
+  
+  <!-- Main art gallery grid layout -->
   <div class="album py-5 bg-light">
     <div class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                            <img class="zoom blur" src="images/field-of-dandelions-card.jpg" alt="Field of Dandelions.jpg"class="bd-placeholder-img card-img-top" width="50%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <div class="wrapper">
+                                <div class="content fade">
+                                    <span class="img-text">Field of Dandelions. <b>£2.95</b></span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Information about this card.</p>
+                            </div>
+                </div>
 
-      <div class="row">
-        <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-                <div class="wrapper" width="80%" height="250">
-                    <img class="zoom blur" src="images/field-of-dandelions-card.jpg" alt="Field of Dandelions.jpg"class="bd-placeholder-img card-img-top" width="80%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <div class="content fade">
-                        <span class="img-text">Field of Dandelions. <b>£2.95</b></span>
+                <div class="container">
+                    <div class="row">
+                      <div class="col-sm">
+                        One of three columns
+                      </div>
+                      <div class="col-sm">
+                        One of three columns
+                      </div>
+                      <div class="col-sm">
+                        One of three columns
+                      </div>
+                    </div>
+                  </div>
+                <div class="col-md-6">
+                                <img class="zoom blur" src="images/toll-card.jpg" alt="Field of Dandelions.jpg"class="bd-placeholder-img card-img-top" width="50%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <div class="content fade"><span class="img-text">Witney Toll Hay on Wye. <b>£2.95</b></</span>
+                            <div class="card-body">
+                            <p class="card-text">Information about this card.</p>
+                            </div>
                     </div>
                 </div>
-                    <div class="card-body">
-                        <p class="card-text">Information about this card.</p>
-                    </div>
             </div>
-          </div>
-          
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-                  <img class="zoom blur" src="images/toll-card.jpg" alt="Field of Dandelions.jpg"class="bd-placeholder-img card-img-top" width="80%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                  <div class="content fade"><span class="img-text">Witney Toll Hay on Wye. <b>£2.95</b></</span>
-              <div class="card-body">
-                <p class="card-text">Information about this card.</p>
-              </div>
-            </div>
-          </div>
+        </div>
+
+
+
+
+    <div class="row">
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
             <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
@@ -161,58 +183,35 @@
           </div>
         </div>
 
-        
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
 
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>
     </div>
   </div>
 
 </main>
 
-<footer class="text-muted">
+<footer>
   <div class="container">
-    <p class="float-right">
-      <a href="#">Back to top</a>
-    </p>
-    <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-    <p>New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
+    <div class="row3" style="padding-top: 5px;">
+        <div class="col-sm">
+            <p id="email" style="font-style:oblique;"></p>
+            <p>Please contact me on my email above with any comments, requests or items you would like to purchase. Thank you.</p>
+        </div>
+    </div>
+            <div class="centered">
+            <!-- css anchor tag to return to top of page for easier navigation -->
+            <a href="#header"><i class="fa-solid fa-arrow-pointer" style="color:lightskyblue;"></i> Click here to return to top of the page</a>
+        </div>
   </div>
 </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/df070f2a43.js" crossorigin="anonymous"></script>
 
       
   </body>
