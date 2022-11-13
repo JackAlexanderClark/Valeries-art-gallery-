@@ -1,7 +1,14 @@
 
 /*-- Code from Stack overflow - https://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile --*/
 
-/* CUSTOM CSS CODE */
+/* 
+* CUSTOM CSS CODE 
+* Adding Borders to Images
+*/
+img {
+    border: 10px solid #555;
+}
+
 
 /* Code courtesey of GetBoostrap templates 
 * Credit: https://getbootstrap.com/docs/4.6/examples/product/ 
