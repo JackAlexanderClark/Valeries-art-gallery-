@@ -39,6 +39,12 @@
           font-size: 3.5rem;
         }
       }
+
+    /* Adding a border to all image tags, except the nav logo using :not css selector */
+    img:not(#logo) {
+        border: 5px solid rgb(194, 191, 191);
+    }
+
     </style>
 
     
@@ -56,7 +62,7 @@
         <nav class="site-header sticky-top py-1">
             <div class="container d-flex flex-column flex-md-row justify-content-between">
             <a class="py-2" aria-label="Product">
-                <img class="web-logo" src="images/val-logo.jpg" alt="vals-web-logo" style="border-radius: 50%;">
+                <img id="logo" class="web-logo" src="images/val-logo.jpg" alt="vals-web-logo" style="border-radius: 50%;">
             </a>
             <!-- using two classes separated by whitespace -->
             <a href="frontpage.html" class="py-2 d-none d-md-inline-block"><h2>Home</h2><i class="fas fa-book"></i></a>
@@ -66,25 +72,25 @@
         </nav>
     </div>
 </header>
-
+<!-- Painting gallery with interactive hover effects, including alt text -->
 <main role="main">
   <section class="jumbotron text-center">
     <div class="container">
         <span class="lead text-muted">
-            <h2 style="text-decoration:underline; font-size: xx-large;">Welcome to my Gallery <i class="fa-solid fa-arrow-pointer"></i></h2>
+            <h2 style="text-decoration:underline; font-size: xx-large;">Welcome to my Painting Gallery <i class="fa-solid fa-arrow-pointer"></i></h2>
+            <h3 style="padding-top: 15px;">These are my limited edition Oil Paintings, these are the original first hand paintings, I use canvas' and oil paints.</h3>
             <p>To interact and learn more about my gallery showcase of my work. Simply hover your mouse over a picture to learn more about it.</p>
         </span>
     </div>
   </section>   
   
-  <!-- Main art gallery grid layout-->
   <div class="album py-5 bg-light">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
                     <img class="zoom blur" src="images/redflowers.jpg" alt="Croscosmia Lucifer in Glass Vase" class="bd-placeholder-img card-img-top" width="80%" height="500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <div class="content fade"><span class="img-text">Field of Dandelions. <b>£2.95</b></</span>
+                    <div class="content fade"><span class="img-text">Field of Dandelions. <b>£95</b></</span>
                     </div>
                     <div class="card-body">
                         <p class="card-text">Information about this card.</p>
@@ -94,106 +100,56 @@
           
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-                  <img class="zoom blur" src="images/toll-card.jpg" alt="Field of Dandelions.jpg"class="bd-placeholder-img card-img-top" width="80%" height="250" preserveAspectRatio="xMidYMid slice" focusable="false">
-                  <div class="content fade"><span class="img-text">Witney Toll Hay on Wye. <b>£2.95</b></</span>
-              <div class="card-body">
-                <p class="card-text">Information about this card.</p>
-              </div>
+                    <img class="zoom blur" src="images/out-to-sea.jpg" alt="Out to sea" class="bd-placeholder-img card-img-top" width="80%" height="500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <div class="content fade"><span class="img-text">Out to Sea Acrylic. Glass Frame Grey Wood 20.5 x 24 ins. <b>£95</b></span></div>
+                    <div class="card-body">
+                        <p class="card-text">Information about this card.</p>
+                    </div>
             </div>
-        </div>
+        </div>            
 
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-                  <img class="zoom blur" src="images/guildhall-hereford-card.jpg" alt="The Guildhall - Hereford City" class="bd-placeholder-img card-img-top" width="80%" height="250" preserveAspectRatio="xMidYMid slice" focusable="false">
-                  <div class="content fade"><span class="img-text">Witney Toll Hay on Wye. <b>£2.95</b></</span>
-              <div class="card-body">
-                <p class="card-text">Information about this card.</p>
-              </div>
+                    <img class="zoom blur" src="images/field-of-dandelions-framed.jpg" alt="Field of Dandielions" class="bd-placeholder-img card-img-top" width="80%" height="500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <div class="content fade"><span class="img-text">Field of Dandielions. Glass and Green/Cream Frame 17 x 21 ins. <b>£200</b></span></div>
+                    <div class="card-body">
+                        <p class="card-text">Information about this card.</p>
+                    </div>
             </div>
-        </div>
+        </div>             
 
         <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+            <div class="card mb-4 shadow-sm">
+                    <img class="zoom blur" src="images/venice-framed.jpg" alt="Venice" class="bd-placeholder-img card-img-top" width="80%" height="500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <div class="content fade"><span class="img-text">Venice Watercolour. Under Class. Cream and Gold Frame. <b>£500</b></span></div>
+                    <div class="card-body">
+                        <p class="card-text">Information about this card.</p>
+                    </div>
             </div>
-          </div>
-        </div>
+        </div> 
+
         <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+            <div class="card mb-4 shadow-sm">
+                    <img class="zoom blur" src="images/toll-frame.jpg" alt="Watercolour in Green" class="bd-placeholder-img card-img-top" width="80%" height="500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <div class="content fade"><span class="img-text">Witney Toll, Hay on Wye.
+                        Watercolour in Green/Gold Frame. 21 x 17 ins. <b>£250</b></span></div>
+                    <div class="card-body">
+                        <p class="card-text">Information about this card.</p>
+                    </div>
             </div>
-          </div>
-        </div>
+        </div> 
+
         <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+            <div class="card mb-4 shadow-sm">
+                    <img class="zoom blur" src="images/shopping-frame.jpg" alt="Charity Shop, Ternbury Wells" class="bd-placeholder-img card-img-top" width="80%" height="500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <div class="content fade"><span class="img-text">Charity Shop, Ternbury Wells. Glass/White Frame. 18 x 15 ins. <b>£200</b></span></div>
+                    <div class="card-body">
+                        <p class="card-text">Information about this card.</p>
+                    </div>
             </div>
-          </div>
-        </div>
-
+        </div> 
         
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </div>
   </div>

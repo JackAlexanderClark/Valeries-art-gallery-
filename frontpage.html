@@ -40,6 +40,12 @@
           font-size: 3.5rem;
         }
       }
+    
+    /* Adding a border to all image tags, except the nav logo using :not css selector */
+    img:not(#logo) {
+        border: 5px solid rgb(24, 23, 23);
+    }
+
     </style>
 
     
@@ -56,7 +62,7 @@
 <nav class="site-header sticky-top py-1">
   <div class="container d-flex flex-column flex-md-row justify-content-between">
     <a class="py-2" href="#" aria-label="Product">
-        <img class="web-logo" src="images/val-logo.jpg" alt="vals-web-logo" style="border-radius: 50%;">
+        <img id="logo" class="web-logo" src="images/val-logo.jpg" alt="vals-web-logo" style="border-radius: 50%;">
     </a>
     <!-- using two classes separated by whitespace -->
     <a href="frontpage.html" class="active py-2 d-none d-md-inline-block"><h2>Home</h2><i class="fas fa-book"></i></a>
@@ -74,7 +80,7 @@
     </div>
     
     <div class="product-device shadow-sm d-none d-md-block">
-        <img src="images/guildhall-hereford-card.jpg" alt="Out to sea" style="max-width: 100%; height: auto;">
+        <img id="intro-img" src="images/guildhall-hereford-card.jpg" alt="Out to sea" style="max-width: 100%; height: auto;">
     </div>
     <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
   </div>

@@ -39,6 +39,12 @@
           font-size: 3.5rem;
         }
       }
+    
+    /* Adding a border to all image tags, except the nav logo using :not css selector */
+    img:not(#logo) {
+        border: 5px solid rgb(24, 23, 23);
+    }
+
     </style>
 
     
@@ -55,7 +61,7 @@
         <nav class="site-header sticky-top py-1">
             <div class="container d-flex flex-column flex-md-row justify-content-between">
                 <a class="py-2" aria-label="Product">
-                    <img class="web-logo" src="images/val-logo.jpg" alt="vals-web-logo" style="border-radius: 50%;">
+                    <img id="logo" class="web-logo" src="images/val-logo.jpg" alt="vals-web-logo" style="border-radius: 50%;">
                 </a>
                 <!-- using two classes separated by whitespace -->
                 <a href="frontpage.html" class="py-2 d-none d-md-inline-block"><h2>Home</h2><i class="fas fa-book"></i></a>
@@ -69,7 +75,8 @@
   <section class="jumbotron text-center">
     <div class="container">
         <span class="lead text-muted">
-            <h2 style="text-decoration:underline; font-size: xx-large;">Welcome to my Gallery <i class="fa-solid fa-arrow-pointer"></i></h2>
+            <h2 style="text-decoration:underline; font-size: xx-large;">Welcome to my Card Collection <i class="fa-solid fa-arrow-pointer"></i></h2>
+            <h3 style="padding-top: 15px;">Here are my Cards, they are available for all occasions and also for Christmas. They can be posted to you.</h3>
             <p>To interact and learn more about my gallery showcase of my work. Simply hover your mouse over a picture to learn more about it.</p>
         </span>
     </div>
