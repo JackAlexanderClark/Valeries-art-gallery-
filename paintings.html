@@ -41,7 +41,7 @@
       }
 
     /* Adding a border to all image tags, except the nav logo using :not css selector */
-    img:not(#logo) {
+    img:not(#weblogo) {
         border: 5px solid rgb(194, 191, 191);
     }
 
@@ -58,11 +58,11 @@
     <div>
         <a id="header"></a>
     </div>
-    <div class="container">
-        <nav class="site-header sticky-top py-1">
+    <div class="container" style="display:block; margin-left: auto; margin-right: auto; width: 50%;">
+        <nav class="site-header sticky-top py-1" style="">
             <div class="container d-flex flex-column flex-md-row justify-content-between">
             <a class="py-2" aria-label="Product">
-                <img id="logo" class="web-logo" src="images/val-logo.jpg" alt="vals-web-logo" style="border-radius: 50%; height: 100px; width: 100px;">
+                <img id="weblogo" class="web-logo" src="images/val-logo.jpg" alt="vals-web-logo" style="border-radius: 50%; height: 100px; width: 100px;">
             </a>
             <!-- using two classes separated by whitespace -->
             <a href="frontpage.html" class="py-2 d-none d-md-inline-block"><h2>Home</h2><i class="fas fa-book"></i></a>
@@ -73,7 +73,8 @@
     </div>
 </header>
 <!-- Painting gallery with interactive hover effects, including alt text -->
-<main role="main">
+<!-- Center main so content in the middle-->
+<main role="main" style="display:block; margin-left: auto; margin-right: auto; width: 50%;">
   <section class="jumbotron text-center">
     <div class="container">
         <span class="lead text-muted">
