@@ -26,9 +26,10 @@ img {
   cursor: hand;
 }
 
-
-
-
+/* consistent text font of times */
+p {
+  font-family: 'Times New Roman', Times, serif;
+}
 
 
 

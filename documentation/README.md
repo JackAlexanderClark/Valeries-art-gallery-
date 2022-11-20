@@ -2,7 +2,7 @@
 
 # Milestone Project 1 - User Centric Frontend Development
 
-## Project website link (GitHub Pages): https://jackalexanderclark.github.io/Valeries-art-gallery-/
+## Project website link (GitHub Pages): https://jackalexanderclark.github.io/Valeries-art-gallery-/frontpage.html
 
 ## NEED TO REWRITE WHY I SWAPPED TO BOOTSTRAP TEMPLATES
 
