@@ -39,6 +39,11 @@
           font-size: 3.5rem;
         }
       }
+
+  body, html {width: 100%; height: 100%; margin: 0; padding: 0}
+  .row-container {display: flex; width: 100%; height: 100%; flex-direction: column; background-color: blue;   overflow: hidden;}
+  .first-row {background-color: lime; }
+  .second-row { flex-grow: 1; border: none; margin: 0; padding: 0; }
     
     /* Adding a border to all image tags, except the nav logo using :not css selector */
     img:not(#weblogo) {
@@ -166,29 +171,29 @@
       <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"><img src="images/toll-card.jpg" style='height: 100%; width: 100%; object-fit: contain;'></div>
     </div>
   </div>
-  
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5" class="heading-style">Tintagel</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
 
-    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5" class="heading-style">Contact Me</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
+<!-- contact me and tintagel location information -->
+<section>
+  <div style="text-align:center;">
+    <hr>
+    <h2>
+      Contact Me: <i class="fa-thin fa-message-arrow-down"></i>
+    </h2>
+    <h4>
+      Please email me any painting or card items you are interested in or any comments <br><b>Valerie.Turner@gmail.com</b>
+    </h4>
   </div>
+</section>
 
-<div class="container" id="youtube-video" style="display:grid; place-items: center; align-content: center; min-height: 100vh;">
-    <iframe src="https://www.youtube.com/embed/0qSLB9uNAGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" alt="youtube video of tintagel - cornwall" allowfullscreen ></iframe>
-</div>
-
+<!-- style to center the youtube video in middle of the screen -->
+<section>
+  <div id="youtube-video" style="display:grid; place-items: center; align-content: center; min-height: 100vh;">
+      <h2>
+        Tintagel:
+      </h2>
+      <iframe style="width: 60%!important;" src="https://www.youtube.com/embed/0qSLB9uNAGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" alt="youtube video of tintagel - cornwall" allowfullscreen ></iframe>
+  </div>
+</section>
 
 </body>
   
@@ -196,13 +201,14 @@
     <div class="container">
       <div class="row3" style="padding-top: 5px;">
           <div class="col-sm">
+              <hr>
               <p id="email" style="font-style:oblique;"></p>
-              <p>Please contact me on my email above with any comments, requests or items you would like to purchase. Thank you.</p>
+              <p style="text-align:center;">All rights to the Artwork belongs to Valerie Turner. Thank you for visiting my website.</p>
           </div>
       </div>
       <div class="centered">
           <!-- css anchor tag to return to top of page for easier navigation -->
-          <a href="#header-anchor" style="color:blueviolet;"><i class="fa-solid fa-arrow-pointer" style="color:blueviolet;"></i> Click here to return to top of the page</a>
+          <a href="#header-anchor" style="color:blueviolet;"><p style="text-align:center;"> Click here to return to top of the page <i class="fa-solid fa-arrow-pointer" style="color:blueviolet;" ></i> </p></a>
       </div>
     </div>
   </footer>

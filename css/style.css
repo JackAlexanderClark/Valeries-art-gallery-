@@ -27,7 +27,7 @@ img {
 }
 
 /* consistent text font of times */
-p {
+p, h2, h4 {
   font-family: 'Times New Roman', Times, serif;
 }
 
