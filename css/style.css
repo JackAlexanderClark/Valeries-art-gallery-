@@ -11,13 +11,20 @@
 #frontpage-title {
     position: relative;
     text-align: center;
+    color: #bf00ff; 
+    font-family:'Times New Roman', Times, serif; 
+    font-size: 76px; 
+    font-weight: normal; 
+    line-height: 52px;
+    margin: 0 0 16px; 
+    text-shadow: 5px 0 0 #add8e6;
+    position: relative;
 }
 
-
-
-
-
-
+/* hover effects for images in gallery */
+img {
+  cursor: hand;
+}
 
 
 

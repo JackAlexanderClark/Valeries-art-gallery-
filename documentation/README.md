@@ -2,9 +2,10 @@
 
 # Milestone Project 1 - User Centric Frontend Development
 
-## Project website link (GitHub Pages)
+## Project website link (GitHub Pages): https://jackalexanderclark.github.io/Valeries-art-gallery-/
 
-![all-devices-black](https://user-images.githubusercontent.com/97599832/180784528-fb95d9a9-796f-4e52-99db-767aa7cd71aa.png)
+## NEED TO REWRITE WHY I SWAPPED TO BOOTSTRAP TEMPLATES
+
 
 ### UX - First time visitors
 1. First time visitors should immediately understand the purpose of the website. It should clearly represent an art gallery and shop to purchase paintings and cards.
@@ -15,7 +16,7 @@
 ### UX - Planning and Implementation 
 1. For the website I want a classic and simple 3 block design for each html page; being a header containing the page title and universal navigation bar, the main middle content block which will contain the image galleries and paragraphs of information and then the bottom footer with an anchor link to take the user back to the top of the page and basic footer information and credits to the painter.
 2. To test the websites funcitonality, I took feedback from a couple user stories and then implemented their feedback.
-3a) User Story 1: Lewis - Understood the website immediately, liked the colour scheme and quickly found their way around to explore the galleries and biography to learn more.
+3a) User Story 1: Lewis - Understood the website immediately, liked the colour scheme and quickly found their way around to explore the galleries and biography to learn more. But thou
 ![cards gallery](https://user-images.githubusercontent.com/97599832/180780315-3c10b16c-9e3d-4a45-9d9d-194a7da112bb.JPG)
 
 ## Wireframes and planning using Balsamiq - Webpage layout
@@ -36,11 +37,19 @@ Furthermore, this flask backend to receive data from form submission will be abl
 ![responsive nav bar](https://user-images.githubusercontent.com/97599832/180781300-f5931121-69e4-4325-ba2d-b219787861fb.JPG)
 
 
-# Life Cycle of Project Development
+# Life Cycle of Project Development and Feedback
+## First Design
 1. Please follow attached link to the attached PDF in which I have included my website wireframe, early gallery concepts and also the different HTML page wireframes.
 2. I firstly created the home-page first that explains the ethos of the artist and gives people an idea of the "purpose" of the website.
 3. After receiving feedback on flaws and limitations on the website I entered the second phase of the life cycle of the website, illustrated by the description of git commits starting in june/july. In this phase I did a rehaul of the front-end of the website and added a small backend process to capture form data for the artist from users expressing their comments and interest.
 4. To have a detailed look at the project life cycle, read the project repository file on GitHub ("https://github.com/JackAlexanderClark/user-centric-project-1") and the associated messages to each commit update - to get an idea of the website life cycle process.
+![all-devices-black](https://user-images.githubusercontent.com/97599832/180784528-fb95d9a9-796f-4e52-99db-767aa7cd71aa.png)
+5. However, as can be seen above I received some constructive criticism from test users and my code institute tutor that the design looked dated (early 2000's) style and that it needed a more modern appeal, it also lacked responsiveness and had a lot of whitespace.
+This feedback led me to my second design of the website.
+
+## Second and Final Design
+1. After receiving feedback from tutors I decided that there were issues with the responsiveness of my orignal design, maining it being static HTML and CSS. I then decided it would be better to use a "getbootstrap" template that will have pre-built containers for responsive and then build my content inside.
+2. I used two templates from the getbootstrap library that I felt were eye catching and modern that would neatly contain the artwork and descriptions. I went for the "product" template for the homepage as it allowed images and text in a grid like window. For the two gallery pages and I went for the "album" templates which I edited to make custom image holders that scaled nicely between all kinds of devices from computer screens to iphones.
 
 ## Known Bugs and Improvements
 1. Discovered in google dev tools was the broken youtube embedment, which I was able to fix after seeing the error in the console.
