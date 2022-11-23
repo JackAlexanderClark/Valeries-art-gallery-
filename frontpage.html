@@ -90,8 +90,8 @@
   .first-row {background-color: lime; }
   .second-row { flex-grow: 1; border: none; margin: 0; padding: 0; }
     
-    /* Adding a border to all image tags, except the nav logo using :not css selector */
-    img:not(#weblogo) {
+    /* Adding a border to all image tags, except the nav logo and homepage image using :not css selector */
+    img:not(#weblogo, #homepage) {
         border: 5px solid rgb(194, 191, 191);
     }
 
@@ -99,8 +99,6 @@
       font-family: 'Times New Roman', Times, serif;
     }
 
-    /* #youtube-video {
-    } */
     .heading-style {
       font-weight: bold;
       font-style: italic;
@@ -131,7 +129,7 @@
 <!-- homepage introduction image -->
 <div class="row">
     <br>
-    <img class=".img-fluid" style="height: 60%; display:block; margin-left: auto; margin-right: auto; width: 60%;" src="images/venice-card.jpg" alt="homepage image">
+    <img id="homepage" class=".img-fluid" style="height: 60%; display:block; margin-left: auto; margin-right: auto; width: 65%;" src="images/venice-card.jpg" alt="homepage image">
 </div>
 
 <!-- need to remove and link to style.css file -->
@@ -151,7 +149,7 @@
 </div>
     
   <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3" style="max-width: 100%; height: auto;">
-    <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+    <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" style="background-color:#7986CB">
       <div class="my-3 py-3">
         <h2 class="display-5" class="heading-style">Biography</h2>
         <p class="lead">                    
@@ -198,7 +196,7 @@
       <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"><img src="images/poppies-card.jpg" style='height: 100%; width: 100%; object-fit: contain;'></div>
     </div>
 
-    <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+    <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" style="background-color:#969DC8">
       <div class="my-3 py-3">
         <h2 class="display-5" class="heading-style">Influences</h2>
         <p class="lead">                    
@@ -223,7 +221,7 @@
       <b>Contact Me</b> <i class="fa-solid fa-message-middle"></i>
     </h2>
     <h5>
-      Please email me any painting or card items you are interested in or any comments <br><b style="color:#4A9DDD">Valerie.Turner@gmail.com</b>
+      Please email me any painting or card items you are interested in or any comments <br><b style="color:#4A9DDD;font-style: italic; padding-bottom: 15px;">Valerie.Turner@gmail.com</b>
     </h5>
   </div>
 </section>
@@ -232,12 +230,11 @@
 <section>
   <div id="youtube-video" style="display:grid; place-items: center; align-content: center;">
       <h2 style="font-family: 'Times New Roman', Times, serif;">
-      <b>Tintagel, Cornwall:</b> <i class="fa-solid fa-map-location-dot"></i>
+        <b>Tintagel, Cornwall</b> <i class="fa-solid fa-map-location-dot"></i>
       </h2>
-      <iframe style="width: 60%!important; height: 400px;" src="https://www.youtube.com/embed/0qSLB9uNAGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" alt="youtube video of tintagel - cornwall" allowfullscreen ></iframe>
+        <iframe style="width: 60%!important; height: 400px;" src="https://www.youtube.com/embed/0qSLB9uNAGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" alt="youtube video of tintagel - cornwall" allowfullscreen ></iframe>
   </div>
 </section>
-
 </body>
   
 <footer>
@@ -246,16 +243,18 @@
           <div class="col-sm">
               <hr>
               <p id="email" style="font-style:oblique;"></p>
-              <p style="text-align:center; font-family: 'Times New Roman', Times, serif;">All rights to the Artwork belongs to Valerie Turner. Thank you for visiting my website.</p>
+              <p style="text-align:center; font-family: 'Times New Roman', Times, serif;">All rights to the Artwork belong to Valerie Turner. Thank you for visiting my website.</p>
           </div>
       </div>
       <div class="centered">
           <!-- css anchor tag to return to top of page for easier navigation -->
-          <a href="#header-anchor" style="color:blueviolet;"><p style="text-align:center;"> Click here to return to top of the page <i class="fa-solid fa-arrow-pointer" style="color:blueviolet;" ></i> </p></a>
+          <a href="#header-anchor" style="color:blueviolet;">
+            <p style="text-align:center;"> Click here to return to top of the page <i class="fa-solid fa-arrow-pointer" style="color:blueviolet;" ></i> 
+            </p>
+          </a>
       </div>
     </div>
   </footer>
-  
   
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
@@ -265,24 +264,24 @@
         <script src="https://kit.fontawesome.com/df070f2a43.js" crossorigin="anonymous"></script>
 
         <script>
-          // When the user scrolls the page, execute myFunction
-      window.onscroll = function() {myFunction()};
-      
-      // Get the navbar
-      var navbar = document.getElementById("navbar");
-      
-      // Get the offset position of the navbar
-      var sticky = navbar.offsetTop;
-      
-      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-      function myFunction() {
-        if (window.pageYOffset >= sticky) {
-          navbar.classList.add("sticky")
-        } else {
-          navbar.classList.remove("sticky");
-        }
-      }
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function() {myFunction()};
+            
+            // Get the navbar
+            var navbar = document.getElementById("navbar");
+            
+            // Get the offset position of the navbar
+            var sticky = navbar.offsetTop;
+            
+            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
       </script>
         
-    </body>
-  </html>
+  </body>
+</html>
