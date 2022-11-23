@@ -23,6 +23,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
 
@@ -47,31 +48,36 @@
         border: 5px solid rgb(194, 191, 191);
     }
 
+    body, html {width: 100%; height: 100%; margin: 0; padding: 0}
+  .row-container {display: flex; width: 100%; height: 100%; flex-direction: column; background-color: blue;   overflow: hidden;}
+  .first-row {background-color: lime; }
+  .second-row { flex-grow: 1; border: none; margin: 0; padding: 0; }
+
     </style>
 
     
 
   </head>
-  <body>
+
     
-<header style="display:block; margin-left: auto; margin-right: auto; width: 50%;">
     <!-- top anchor head for navigation -->
     <div>
-        <a id="header"></a>
+        <a id="header-anchor"></a>
     </div>
 
-<nav class="site-header sticky-top py-1" style="background-color: #ece8f8;">
-  <div class="container d-flex flex-column flex-md-row justify-content-between">
-    <a class="py-2" href="#" aria-label="Product">
-        <img id="weblogo" src="images/val-logo.jpg" alt="vals-web-logo" style="border-radius: 50%; height: 100px; width: 100px;">
-    </a>
-    <!-- using two classes separated by whitespace -->
-    <a href="frontpage.html" class="py-2 d-none d-md-inline-block"><h2>Home</h2><i class="fas fa-book"></i></a>
-    <a href="cards.html" class="active py-2 d-none d-md-inline-block"><h2>Cards</h2><i class="bi bi-book-half"></i></a>
-    <a href="paintings.html" class="py-2 d-none d-md-inline-block"><h2>Paintings</h2><i class="fas fa-palette"></i></a>
-  </div>
-</nav>
-</header>
+    <nav class="site-header sticky-top py-1" style="background-color: #ece8f8;">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="py-2" href="#" aria-label="Product">
+            <img id="weblogo" src="images/val-logo.jpg" alt="vals-web-logo" style="border-radius: 50%; height: 100px; width: 100px;">
+        </a>
+        <!-- using two classes separated by whitespace -->
+        <a href="frontpage.html" class="active py-2 d-none d-md-inline-block"><h2>Home</h2><i class="fas fa-book"></i></a>
+        <a href="cards.html" class="py-2 d-none d-md-inline-block"><h2>Cards</h2><i class="bi bi-book-half"></i></a>
+        <a href="paintings.html" class="py-2 d-none d-md-inline-block"><h2>Paintings</h2><i class="fas fa-palette"></i></a>
+      </div>
+    </nav>
+
+<body>
 
 <main role="main" style="display:block; margin-left: auto; margin-right: auto; width: 50%;">
   <section class="jumbotron text-center">
