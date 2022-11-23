@@ -7,11 +7,11 @@
 */
 
 /* Adding a border to show which page is active in the nav bar */
-.active {
-  display: block;
-  color: #ecc1e1;
+.active > h2 {
+  background-color: #ecc1e1;
   position: relative;
-  border-style: dashed;
+  border-style: groove;
+  border-color:aliceblue;
 }
 
 /* My CSS for frontpage, cards gallery and the paintings gallery */
