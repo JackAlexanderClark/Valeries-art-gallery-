@@ -9,7 +9,7 @@
 /* Adding a border to show which page is active in the nav bar */
 .active {
   display: block;
-  background-color: #ecc1e1;
+  color: #ecc1e1;
   position: relative;
   border-style: dashed;
 }

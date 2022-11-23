@@ -7,7 +7,8 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.101.0">
     <title>Home Page</title>
-
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/album/">
     <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/product/">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
@@ -26,6 +27,40 @@
 
 
     <style>
+      /* https://www.w3schools.com/howto/howto_js_navbar_sticky.asp   */
+                /* Style the navbar */
+                  #navbar {
+                    overflow: hidden;
+                  }
+
+                  /* Navbar links */
+                  #navbar a {
+                    float: left;
+                    display: block;
+                    text-align: center;
+                    padding: 14px;
+                    text-decoration: none;
+                  }
+
+                  /* Page content */
+                  .content {
+                    padding: 16px;
+                  }
+
+                  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+                  .sticky {
+                    position: fixed;
+                    top: 0;
+                    width: 100%;
+                  }
+
+                  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+                  .sticky + .content {
+                    padding-top: 60px;
+                  }
+
+                  /* end of w3schools code */
+
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -39,6 +74,12 @@
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
+      }
+
+      /* highlight the child h2 tag inside of the active class so you can see which page you are on */
+      .active > h2 {
+        background-color: #ecc1e1;
+        position: relative;
       }
 
   body, html {width: 100%; height: 100%; margin: 0; padding: 0}
@@ -64,9 +105,6 @@
 
     </style>
 
-    
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <!-- top anchor head for navigation -->
@@ -74,15 +112,15 @@
         <a id="header-anchor"></a>
     </div>
 
-    <nav class="site-header sticky-top py-1" style="background-color: #ece8f8;">
+    <nav class="site-header sticky-top py-1" style="background-color: #ece8f8;" id="navbar">
       <div class="container d-flex flex-column flex-md-row justify-content-between">
         <a class="py-2" href="#" aria-label="Product">
             <img id="weblogo" src="images/val-logo.jpg" alt="vals-web-logo" style="border-radius: 50%; height: 100px; width: 100px;">
         </a>
         <!-- using two classes separated by whitespace -->
-        <a href="frontpage.html" class="active py-2 d-none d-md-inline-block"><h2>Home</h2><i class="fas fa-book"></i></a>
-        <a href="cards.html" class="py-2 d-none d-md-inline-block"><h2>Cards</h2><i class="bi bi-book-half"></i></a>
-        <a href="paintings.html" class="py-2 d-none d-md-inline-block"><h2>Paintings</h2><i class="fas fa-palette"></i></a>
+        <a href="frontpage.html" class="py-2 d-none d-md-inline-block"><h2>Home&nbsp;<i class="fas fa-book" style="color:#CE93D8;"></i></h2></a>
+        <a href="cards.html" class="py-2 d-none d-md-inline-block"><h2>Cards&nbsp;<i class="bi bi-book-half" style="color:#CE93D8;"></i></h2></a>
+        <a href="paintings.html" class="active py-2 d-none d-md-inline-block"><h2>Paintings&nbsp;<i class="fas fa-palette" style="color:#CE93D8;"></i></h2></a>
       </div>
     </nav>
 
@@ -98,6 +136,8 @@
   <section class="jumbotron text-center">
     <div class="container">
         <span class="lead text-muted">
+            <br>
+            <br>
             <h2 style="text-decoration:underline; font-size: xx-large;">Welcome to my Painting Gallery <i class="fa-solid fa-arrow-pointer"></i></h2>
             <h3 style="padding-top: 15px;">These are my limited edition Oil Paintings, I use canvas' and oil paints. Each picture is priced individually and is the original copy. They will be carefully packaged and sent 1st class to your address.</h3></h3>
             <p>To interact and learn more about my gallery showcase of my work. Simply hover your mouse over a picture to learn more about it.</p>
@@ -111,10 +151,10 @@
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
                     <img src="images/redflowers.jpg" alt="Croscosmia Lucifer in Glass Vase" class="bd-placeholder-img card-img-top" width="80%" height="500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <div class="content fade"><span class="img-text">Field of Dandelions. <b>£95</b></</span>
+                    <div><span class="img-text">Vase of Flowers. <b>£95</b></</span>
                     </div>
                     <div class="card-body">
-                        <p class="card-text">Information about this card.</p>
+                        <p class="card-text">Watercolour original of Fragrant Summer Blooms.</p>
                     </div>
             </div>
         </div>
@@ -122,9 +162,9 @@
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
                     <img src="images/out-to-sea.jpg" alt="Out to sea" class="bd-placeholder-img card-img-top" width="80%" height="500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <div class="content fade"><span class="img-text">Out to Sea Acrylic. Glass Frame Grey Wood 20.5 x 24 ins. <b>£95</b></span></div>
+                    <div><span class="img-text">Out to Sea Acrylic. Glass Frame Grey Wood 20.5 x 24 ins. <b>£95</b></span></div>
                     <div class="card-body">
-                        <p class="card-text">Information about this card.</p>
+                        <p class="card-text">Acrylic painting of boat venturing out on the Pembrokeshire Coastline.</p>
                     </div>
             </div>
         </div>            
@@ -132,19 +172,19 @@
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
                     <img src="images/field-of-dandelions-framed.jpg" alt="Field of Dandielions" class="bd-placeholder-img card-img-top" width="80%" height="500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <div class="content fade"><span class="img-text">Field of Dandielions. Glass and Green/Cream Frame 17 x 21 ins. <b>£200</b></span></div>
+                    <div><span class="img-text">Field of Dandielions. Glass and Green/Cream Frame 17 x 21 ins. <b>£200</b></span></div>
                     <div class="card-body">
-                        <p class="card-text">Information about this card.</p>
+                        <p class="card-text">Original watercolour set in field full of dandelions in a Herefordshire Valley.</p>
                     </div>
             </div>
         </div>             
 
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-                    <img class="zoom blur" src="images/venice-framed.jpg" alt="Venice" class="bd-placeholder-img card-img-top" width="80%" height="500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <div class="content fade"><span class="img-text">Venice Watercolour. Under Class. Cream and Gold Frame. <b>£500</b></span></div>
+                    <img src="images/venice-framed.jpg" alt="Venice" class="bd-placeholder-img card-img-top" width="80%" height="500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <div><span class="img-text">Venice Watercolour. Under Class. Cream and Gold Frame. <b>£500</b></span></div>
                     <div class="card-body">
-                        <p class="card-text">Information about this card.</p>
+                        <p class="card-text">Iconic view of approaching Venice from the water.</p>
                     </div>
             </div>
         </div> 
@@ -152,10 +192,11 @@
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
                     <img src="images/toll-frame.jpg" alt="Watercolour in Green" class="bd-placeholder-img card-img-top" width="80%" height="500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <div class="content fade"><span class="img-text">Witney Toll, Hay on Wye.
+                    <div><span class="img-text">Witney Toll, Hay on Wye.
                         Watercolour in Green/Gold Frame. 21 x 17 ins. <b>£250</b></span></div>
                     <div class="card-body">
-                        <p class="card-text">Information about this card.</p>
+                        <p class="card-text">IIconic Toll Bridge on the way to the literary town of Hay on Wye.
+                        </p>
                     </div>
             </div>
         </div> 
@@ -163,9 +204,9 @@
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
                     <img src="images/shopping-frame.jpg" alt="Charity Shop, Ternbury Wells" class="bd-placeholder-img card-img-top" width="80%" height="500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <div class="content fade"><span class="img-text">Charity Shop, Ternbury Wells. Glass/White Frame. 18 x 15 ins. <b>£200</b></span></div>
+                    <div><span class="img-text">Charity Shop, Ternbury Wells. Glass/White Frame. 18 x 15 ins. <b>£200</b></span></div>
                     <div class="card-body">
-                        <p class="card-text">Information about this card.</p>
+                        <p class="card-text">Window shopping in Tenbury Wells.</p>
                     </div>
             </div>
         </div> 
@@ -200,7 +241,25 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/df070f2a43.js" crossorigin="anonymous"></script>
+<script>
+    // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
 
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
       
   </body>
 </html>

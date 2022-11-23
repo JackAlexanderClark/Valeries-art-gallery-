@@ -7,7 +7,8 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.101.0">
     <title>Home Page</title>
-
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/product/">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
@@ -25,6 +26,41 @@
 
 
     <style>
+
+
+     /* https://www.w3schools.com/howto/howto_js_navbar_sticky.asp   */
+                /* Style the navbar */
+                #navbar {
+                    overflow: hidden;
+                  }
+
+                  /* Navbar links */
+                  #navbar a {
+                    float: left;
+                    display: block;
+                    text-align: center;
+                    padding: 14px;
+                    text-decoration: none;
+                  }
+
+                  /* Page content */
+                  .content {
+                    padding: 16px;
+                  }
+
+                  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+                  .sticky {
+                    position: fixed;
+                    top: 0;
+                    width: 100%;
+                  }
+
+                  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+                  .sticky + .content {
+                    padding-top: 60px;
+                  }
+
+                  /* end of w3schools code */
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -39,6 +75,13 @@
           font-size: 3.5rem;
         }
       }
+
+      /* highlight the child h2 tag inside of the active class so you can see which page you are on */
+      .active > h2 {
+        background-color: #ecc1e1;
+        position: relative;
+      }
+      
 
   body, html {width: 100%; height: 100%; margin: 0; padding: 0}
   .row-container {display: flex; width: 100%; height: 100%; flex-direction: column; background-color: blue;   overflow: hidden;}
@@ -63,9 +106,6 @@
 
     </style>
 
-    
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <!-- top anchor head for navigation -->
@@ -74,20 +114,21 @@
     </div>
 
     
-<nav class="site-header sticky-top py-1" style="background-color: #ece8f8;">
+<nav class="site-header sticky-top py-1" style="background-color: #ece8f8;" id="navbar">
   <div class="container d-flex flex-column flex-md-row justify-content-between">
     <a class="py-2" href="#" aria-label="Product">
         <img id="weblogo" src="images/val-logo.jpg" alt="vals-web-logo" style="border-radius: 50%; height: 100px; width: 100px;">
     </a>
     <!-- using two classes separated by whitespace -->
-    <a href="frontpage.html" class="active py-2 d-none d-md-inline-block"><h2>Home</h2><i class="fas fa-book"></i></a>
-    <a href="cards.html" class="py-2 d-none d-md-inline-block"><h2>Cards</h2><i class="bi bi-book-half"></i></a>
-    <a href="paintings.html" class="py-2 d-none d-md-inline-block"><h2>Paintings</h2><i class="fas fa-palette"></i></a>
+    <a href="frontpage.html" class="active py-2 d-none d-md-inline-block"><h2>Home&nbsp;<i class="fas fa-book" style="color:#CE93D8;"></i></h2></a>
+    <a href="cards.html" class="py-2 d-none d-md-inline-block"><h2>Cards&nbsp;<i class="bi bi-book-half" style="color:#CE93D8;"></i></h2></a>
+    <a href="paintings.html" class="py-2 d-none d-md-inline-block"><h2>Paintings&nbsp;<i class="fas fa-palette" style="color:#CE93D8;"></i></h2></a>
   </div>
 </nav>
 
 <!-- homepage introduction image -->
 <div class="row">
+    <br>
     <img class=".img-fluid" style="height: 60%; display:block; margin-left: auto; margin-right: auto; width: 60%;" src="images/venice-card.jpg" alt="homepage image">
 </div>
 
@@ -220,6 +261,26 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://kit.fontawesome.com/df070f2a43.js" crossorigin="anonymous"></script>
+
+        <script>
+          // When the user scrolls the page, execute myFunction
+      window.onscroll = function() {myFunction()};
+      
+      // Get the navbar
+      var navbar = document.getElementById("navbar");
+      
+      // Get the offset position of the navbar
+      var sticky = navbar.offsetTop;
+      
+      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+      </script>
         
     </body>
   </html>
