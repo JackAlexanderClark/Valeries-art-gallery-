@@ -1,83 +1,66 @@
 # README DOCUMENTATION
 
 # Milestone Project 1 - User Centric Frontend Development
+# Author: Jack Clark
 
-## Project website link (GitHub Pages): https://jackalexanderclark.github.io/Valeries-art-gallery-/frontpage.html
+# Project website link (GitHub Pages): https://jackalexanderclark.github.io/Valeries-art-gallery-/frontpage.html
 
-## NEED TO REWRITE WHY I SWAPPED TO BOOTSTRAP TEMPLATES
+## Website Device Mockup
+<img width="879" alt="image" src="https://user-images.githubusercontent.com/97599832/203627868-9015279e-3bf7-4872-ab1a-57f437ab7bae.png">
+
+## **I) Introduction**
+1. For my user centric frontend project, I decided to build a website to display my Grandmothers artwork, from the start I knew I wanted a 3 page layout; firstly an introductory home page with a basic biography and information related to influences and styles, a second gallery page for her card collection and a third page for her framed paintings.
+2. My project went through two phases of iteration. I originally designed my art gallery website statically with HTML and CSS without bootstrap. Primarily, through the lens of my laptop - which would later lead to issues with mobile and ipad devices etc.
+3. After feedback from users and my Code Institute tutors, I rebuilt my website from the ground up but this time using Bootstrap templates (product and album), this gave my second website a much better flow and layout and all scaled well with other devices.
 
 
-### UX - First time visitors
-1. First time visitors should immediately understand the purpose of the website. It should clearly represent an art gallery and shop to purchase paintings and cards.
-2. It should be very simplistic to navigate between the different pages; home, gallery and the shop.
-3. I have integrated a YouTube video from my channel, this demonstrates Tintagel's beautiful coast-line to immerse the visitor in the landscape and mindset.
-4. The interactive gallery is easy to use by simply hovering your mouse over the images to reveal text about the item you are currently looking at, such as the title and the name.
-
-### UX - Planning and Implementation 
-1. For the website I want a classic and simple 3 block design for each html page; being a header containing the page title and universal navigation bar, the main middle content block which will contain the image galleries and paragraphs of information and then the bottom footer with an anchor link to take the user back to the top of the page and basic footer information and credits to the painter.
-2. To test the websites funcitonality, I took feedback from a couple user stories and then implemented their feedback.
-3a) User Story 1: Lewis - Understood the website immediately, liked the colour scheme and quickly found their way around to explore the galleries and biography to learn more. But thou
-![cards gallery](https://user-images.githubusercontent.com/97599832/180780315-3c10b16c-9e3d-4a45-9d9d-194a7da112bb.JPG)
-
-## Wireframes and planning using Balsamiq - Webpage layout
+## **II) Planning and Design Philosophy**
+1. I took a lot of input from my Grandmother "Valerie Turner", she gave me her ideas and agreed with my approach of a 3 page layout. She also was clear that her favourite colours lie within the purple and violet family. This directed me to use shades of purples and violets in the website backgrounds. I used the tool: "https://redketchup.io/color-picker" as a way to find HEX colours and related shades for visual appeal and consistency.
+2. This was my first wireframe plan I made using software from: "https://balsamiq.com/wireframes/":
 ![Wireframe](https://user-images.githubusercontent.com/97599832/180777531-687a10f0-2b01-47cc-b4ae-8c9e61623ef1.JPG)
 
-### Themes and Design
-1. The primary design theme is a painting frame border to illustrate the artistic purposes - it is present throughout to provide continuity.
-2. Similarly, the colours have been kept to a basic and consistent pallete. Such as light blue (#add8e6) and dark blue (#410cd3).
-3. Another design philosophy was to only use a single h1 tag for each html page for aesthetics and to make important information prominant. 
-4. Finally, the other design pillar was that of simplicity - there is a biography, an interactive gallery and a shop with a contact form to directly contact the artist with an item request, feedback or to purchase an item chosen from the gallery.
 
-### Features
-1. Interactive elements such as; navigation bars and scrollable gallery. 
-2. To allow site users to contact the artist, I implemented a flask backend to take data from the shop form and display the information on a web page to communicate and store information pertaining to peoples interest in the products or their contact information.
-Furthermore, this flask backend to receive data from form submission will be able to be viewed by myself the web developer and then relayed to my grandmother, when I check the file.
-3. I have included facebook links that take the user to facebook, however after speaking to the artist who is my grandmother, she did not want the form.html painting request details to go anywhere or have her personal facebook be attached to this project. Therefore, both the facebook link which works but does not directly take it to her profile and similarly the flask and form.html data is not connected to her email or anything etc. The purpose of this website is to create a "Static" website for a real world artist, therefore I have decided not to make these links live.
-4. Responsive navigation bar: 
-![responsive nav bar](https://user-images.githubusercontent.com/97599832/180781300-f5931121-69e4-4325-ba2d-b219787861fb.JPG)
+## **III) Improvements from User Feedback**
+1. I asked a variety of people from my workplace to my family and for the most impartial feedback tutors from Code Institute - to give me their initial thoughts and feedback as users of my website. 
+2. **User 1**: Liked the appearance of my original gallery design:
+![cards gallery](https://user-images.githubusercontent.com/97599832/180780315-3c10b16c-9e3d-4a45-9d9d-194a7da112bb.JPG)
+However, this gallery did not display well at certain breakpoints.
+3. **Code Institute Tutor 1**: Thought the design was similar to early 2000 era websites (in essence that it looked out-dated), which I did agree with. It was also brought to my attention that there was no way to return to the top of the website and that the navigation bar did not scroll down with the user meaning navigation was more difficult.
+4. **Code Institute Tutor 2**: Found issues with the navigation bar that it was not responsive and would break at certain points when testing using Chrome Developer Tools:
 
+<img width="209" alt="image" src="https://user-images.githubusercontent.com/97599832/203626100-0eadb67d-7160-4a5d-8c3c-97cf8d05690a.png">
 
-# Life Cycle of Project Development and Feedback
-## First Design
-1. Please follow attached link to the attached PDF in which I have included my website wireframe, early gallery concepts and also the different HTML page wireframes.
-2. I firstly created the home-page first that explains the ethos of the artist and gives people an idea of the "purpose" of the website.
-3. After receiving feedback on flaws and limitations on the website I entered the second phase of the life cycle of the website, illustrated by the description of git commits starting in june/july. In this phase I did a rehaul of the front-end of the website and added a small backend process to capture form data for the artist from users expressing their comments and interest.
-4. To have a detailed look at the project life cycle, read the project repository file on GitHub ("https://github.com/JackAlexanderClark/user-centric-project-1") and the associated messages to each commit update - to get an idea of the website life cycle process.
-![all-devices-black](https://user-images.githubusercontent.com/97599832/180784528-fb95d9a9-796f-4e52-99db-767aa7cd71aa.png)
-5. However, as can be seen above I received some constructive criticism from test users and my code institute tutor that the design looked dated (early 2000's) style and that it needed a more modern appeal, it also lacked responsiveness and had a lot of whitespace.
-This feedback led me to my second design of the website.
+5. From this feedback the most important lesson learned was building a website with html and css for a laptop screen first then trying to build in responsive elements was the wrong approach and made it very hard to improve. This is what led me to rebuilding again from the ground up agian this time using bootstrap templates and then building my elements into it.
+6. I used two templates from the getbootstrap library that I felt were eye catching and modern that would neatly contain the artwork and descriptions. I went for the "product" template for the homepage as it allowed images and text in a grid like window. For the two gallery pages and I went for the "album" templates which I edited to make custom image holders that scaled nicely between all kinds of devices from computer screens to iphones.
+7. Another area of improvement for the website comes from the slow loading of the high resolution images on the gallery page. I originally had the cards and paintings on one page. This was brought to my attention and to keep the loading times high I created a new html page to display the cards and the other html page to display the oil paintings - this will reduce the amount of loading on each page by half and also allow me to keep the high resolution on the images and to not sacrifice the quality of the images, which is a highlight of the project. 
 
-## Second and Final Design
-1. After receiving feedback from tutors I decided that there were issues with the responsiveness of my orignal design, maining it being static HTML and CSS. I then decided it would be better to use a "getbootstrap" template that will have pre-built containers for responsive and then build my content inside.
-2. I used two templates from the getbootstrap library that I felt were eye catching and modern that would neatly contain the artwork and descriptions. I went for the "product" template for the homepage as it allowed images and text in a grid like window. For the two gallery pages and I went for the "album" templates which I edited to make custom image holders that scaled nicely between all kinds of devices from computer screens to iphones.
+## **New UX and UI Website with User Feedback**
+1. With the above feedback in mind, I chose the getbootstrap template "album" for my image galleries (cards and paintings). The images are inside of containers that scale as you decrease the pixel width using Chrome Developer Tools but also stack nicely one on top of the other, when using smaller devices such as an iPhone or Pixel Phone.
+<img width="918" alt="image" src="https://user-images.githubusercontent.com/97599832/203628193-9e4d1707-89ea-46b0-acf9-1424605cbc44.png">
+2. Similarly, I redesigned the front page into a four panel design, with each panel window containing an image and also a paragraphs worth of text outlining 4 principles I wanted to outline for the user. These being a biography, an origin story (where I am from), Style and Influences pertaining to the artists philosophy.
+3. I also included a YouTube video embedded within the page that does not require an external tab being opened to illustrated the area the artist lives in and it's stunning views. Similarly as can be seen below, the navigation bar is now sticky and will scroll down the page with the user so you can always see which page you are on.
+<img width="932" alt="image" src="https://user-images.githubusercontent.com/97599832/203628690-e28aa90d-a971-4051-a3c8-95fa2500e022.png">
+4. I also added a return to top of the page anchor for ease of use as was made clear from user feedback.
+<img width="581" alt="image" src="https://user-images.githubusercontent.com/97599832/203629083-2e56be0d-1a35-4b08-b549-6117d37b745e.png">
 
-## Known Bugs and Improvements
-1. Discovered in google dev tools was the broken youtube embedment, which I was able to fix after seeing the error in the console.
-2. Another area of improvement for the website comes from the slow loading of the high resolution images on the gallery.html page. This was brought to my attention and to keep the loading times high I created a new html page to display the cards and the other html page to display the oil paintings - this will reduce the amount of loading on each page by half and also allow me to keep the high resolution on the images and to not sacrifice the quality of the images, which is a highlight of the project. 
-3. I did some rudimentary testing by using a timer on webpage load to when all images were fully loaded on the screen. When all the images were on the lone gallery.html page it took on average (3 repeat tests) 11.4 seconds. Once I split the images between the two new html pages (cards.html and paintings.html) it was reduces to approximately 6.2 seconds between the two - increasing the responsiveness of the website.
-
-
-## Code
-1. Code for the flask (app.py and form.html) credited to -> https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data.
-2. Responsive navigation bar credited to -> https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
-3. Extra code from the responsive nav bar credited to -> https://adiati.com/how-to-create-a-responsive-navigation-bar-with-flexbox-and-media-queries
-4. CSS media queries credited to stackoverflow -> https://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile 
-
-## Technologies, Frameworks and Libraries
+## **IV) Technology and Tools Used**
 1. HTML
 2. CSS
-3. Bootstrap 
-4. GitHub and GitPod Cloud IDE
-5. Font Awesome
-6. Bootstrap Icons
+3. JavaScript
+4. Chrome Dev Tools
+5. Version Control, IDE and Deployment: GitHub, GitPod and GitHub Pages
+6. Bootstrap
+7. Font Awesome (icons)
+8. Testing: Chrome Dev Tools and W3C CSS Validator
 
-## Testing
-1. W3C CSS Validator
-2. Chrome Dev Tools
 
-## Credits
-1. Jack Clark 
-2. Valerie Turner
+## **V) Acknowledgements and Code Credit**
+1. Credit and thanks to Valerie Turner for his Artwork featured on this website.
+2. Credit for GetBootstrap Templates; Album and Product. Source: "https://getbootstrap.com/docs/4.6/examples/album/", "https://getbootstrap.com/docs/4.6/examples/product/".
+3. Credit for Sticky Navigation Bar. Source "https://www.w3schools.com/howto/howto_js_navbar_sticky.asp"
+4. 
+### CHECK SPELLING
+
 
 
 
