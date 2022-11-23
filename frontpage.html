@@ -232,10 +232,10 @@
   <div style="text-align:center; font-family: 'Times New Roman', Times, serif;">
     <hr>
     <h2>
-      <b>Contact Me</b> <i class="fa-solid fa-message-middle"></i>
+      <b>Contact Me <i class="fa-regular fa-comment"></i></b> <i class="fa-solid fa-message-middle"></i>
     </h2>
     <h5>
-      Please email me any painting or card items you are interested in or any comments <br><b style="color:#4A9DDD;font-style: italic;">Valerie.Turner@gmail.com</b>
+      Please email me any painting or card items you are interested in or any comments <br><b style="color:#4A9DDD;font-style: italic; padding-top: 20px;">Valerie.Turner@gmail.com</b>
     </h5>
   </div>
 </section>
@@ -268,16 +268,12 @@
         <script src="https://kit.fontawesome.com/df070f2a43.js" crossorigin="anonymous"></script>
 
         <script>
-            // When the user scrolls the page, execute myFunction
+            // Code credit and source: "https://www.w3schools.com/howto/howto_js_navbar_sticky.asp"
             window.onscroll = function() {myFunction()};
             
-            // Get the navbar
             var navbar = document.getElementById("navbar");
-            
-            // Get the offset position of the navbar
             var sticky = navbar.offsetTop;
             
-            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
             function myFunction() {
               if (window.pageYOffset >= sticky) {
                 navbar.classList.add("sticky")
