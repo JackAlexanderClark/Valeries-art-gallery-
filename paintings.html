@@ -60,7 +60,7 @@
             padding-top: 60px;
           }
 
-          /* end of w3schools code */
+      /* end of w3schools code */
 
       /* Credit and Source to GetBootstrap: https://getbootstrap.com/docs/4.6/examples/album/" */
       .bd-placeholder-img {
@@ -91,52 +91,6 @@
       font-weight: bold;
       font-style: italic;
     }
-
-        /* My original navbar would break at certain pixel widths on small devices such as phones and tablets
-        *  therefore, I have used media queries to hide the larger pixel width devices (i.e. laptops) as hidden,
-        *  when a certain pixel width is reached and vice versa.
-        */
-        .mobile-nav-bar{
-          display: none;
-        }
-        .laptop-nav-bar{
-          display: inline;
-        }
-        @media only screen 
-          and (max-device-width : 667px) 
-          and (orientation : portrait) 
-          and (-webkit-min-device-pixel-ratio : 2)
-        {
-        .mobile-nav-bar{
-          display: inline;
-        }
-
-        .laptop-nav-bar{
-          display: none;
-        }
-
-        /* Show aqua underline for mobile nav bar to show which page you are on */
-          #show-page > small  {
-          text-decoration-line: underline;
-          text-decoration-color: aqua;
-        }
-      }
-
-      /* adding gallery effects for mouse hover */
-      .gray-fade-effect img{
-        opacity:1.0;
-        filter: grayscale(0%);
-        transition: 1.5s ease;
-      }
-
-      .gray-fade-effect img:hover{
-        opacity:0.5;
-        filter: grayscale(20%);
-        transition: 1.5s ease;
-        -webkit-transform: scale(1.05);
-        transform: scale(1.05);
-        -ms-transform: scale(1.05);
-      }
 
     </style>
 

@@ -78,14 +78,6 @@
         }
       }
 
-      /* highlight the child h2 tag inside of the active class so you can see which page you are on */
-      .active > h2 {
-        background-color: #ecc1e1;
-        position: relative;
-        border-style: groove;
-        border-color:aliceblue;
-      }
-    
     /* Adding a border to all image tags, except the nav logo using :not css selector */
     img:not(#weblogo) {
         border: 5px solid rgb(194, 191, 191);
@@ -99,53 +91,6 @@
       font-weight: bold;
       font-style: italic;
     }
-
-        /* My original navbar would break at certain pixel widths on small devices such as phones and tablets
-        *  therefore, I have used media queries to hide the larger pixel width devices (i.e. laptops) as hidden,
-        *  when a certain pixel width is reached and vice versa.
-        */
-        .mobile-nav-bar{
-          display: none;
-        }
-        .laptop-nav-bar{
-          display: inline;
-        }
-        @media only screen 
-        /* I found that the nav bar used for large devices broke at 762px which will then hide it and show the mobile nav bar */
-          and (max-device-width : 762px) 
-          and (-webkit-min-device-pixel-ratio : 2)
-          and (orientation : portrait) 
-        {
-        .mobile-nav-bar{
-          display: inline;
-        }
-
-        .laptop-nav-bar{
-          display: none;
-        }
-
-        /* Show aqua underline for mobile nav bar to show which page you are on */
-        #show-page > small  {
-          text-decoration-line: underline;
-          text-decoration-color: aqua;
-        }
-      }
-
-      /* adding gallery effects for mouse hover */
-      .gray-fade-effect img{
-        opacity:1.0;
-        filter: grayscale(0%);
-        transition: 1.5s ease;
-      }
-
-      .gray-fade-effect img:hover{
-        opacity:0.5;
-        filter: grayscale(20%);
-        transition: 1.5s ease;
-        -webkit-transform: scale(1.05);
-        transform: scale(1.05);
-        -ms-transform: scale(1.05);
-      }
 
     </style>
 
