@@ -49,6 +49,15 @@ However, this gallery did not display well at certain breakpoints. Also suggeste
 
 6. I also changed the front-page to have text in columns together to make the overall page more cohesive and to reduce on the amount of empty space.
 <img width="886" alt="image" src="https://user-images.githubusercontent.com/97599832/204019084-4cbec2d1-7a46-4e1e-a911-da613f1a23c0.png">
+
+8. I fixed an issue with a disparity between mobile and smaller device Navbars, as seen below the navbar breaks at a pixel width of 762px:
+![mobile-white](https://user-images.githubusercontent.com/97599832/204100084-bd2eea2f-c1db-4524-8a6d-4467c25f033d.png)
+By using Chrome Dev Tools, I added media queries for this certain width to hide the navbar and instead show a mobile designed navbar with a smaller logo and and text. Examples shown below:
+Laptop: 
+<img width="570" alt="image" src="https://user-images.githubusercontent.com/97599832/204100188-2102a40e-7c58-4158-a02c-af2ec06e2635.png">
+Mobile: 
+<img width="435" alt="image" src="https://user-images.githubusercontent.com/97599832/204100220-9c18d986-1e41-40e2-abf0-6c3c2da80277.png">
+
 # **IV) Technology and Tools Used**
 1. HTML
 2. CSS

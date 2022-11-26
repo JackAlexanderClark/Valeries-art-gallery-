@@ -28,39 +28,38 @@
     <style>
 
 
-     /* https://www.w3schools.com/howto/howto_js_navbar_sticky.asp   */
-                /* Style the navbar */
-                #navbar {
-                    overflow: hidden;
-                  }
+     /* Code Source: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp  */
+      /* Style the navbar */
+      #navbar {
+          overflow: hidden;
+        }
 
-                  /* Navbar links */
-                  #navbar a {
-                    float: left;
-                    display: block;
-                    text-align: center;
-                    padding: 14px;
-                    text-decoration: none;
-                  }
+        /* Navbar links */
+        #navbar a {
+          float: left;
+          display: block;
+          text-align: center;
+          padding: 14px;
+          text-decoration: none;
+        }
 
-                  /* Page content */
-                  .content {
-                    padding: 16px;
-                  }
+        /* Page content */
+        .content {
+          padding: 16px;
+        }
 
-                  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-                  .sticky {
-                    position: fixed;
-                    top: 0;
-                    width: 100%;
-                  }
+        /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+        .sticky {
+          position: fixed;
+          top: 0;
+          width: 100%;
+        }
 
-                  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-                  .sticky + .content {
-                    padding-top: 60px;
-                  }
-
-                  /* end of w3schools code */
+        /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+        .sticky + .content {
+          padding-top: 60px;
+        }
+        /* end of w3schools code */
 
       /* Credit and Source to GetBootstrap: https://getbootstrap.com/docs/4.6/examples/product/" */
       .bd-placeholder-img {
@@ -86,19 +85,43 @@
         border-style: groove;
         border-color:aliceblue;
       }
-      
-
-  body, html {width: 100%; height: 100%; margin: 0; padding: 0}
-  .row-container {display: flex; width: 100%; height: 100%; flex-direction: column; background-color: blue;   overflow: hidden;}
-  .first-row {background-color: lime; }
-  .second-row { flex-grow: 1; border: none; margin: 0; padding: 0; }
+    
     
     /* Adding a border to all image tags, except the nav logo and homepage image using :not css selector */
     img:not(#weblogo, #homepage) {
         border: 5px solid rgb(194, 191, 191);
     }
 
+            /* My original navbar would break at certain pixel widths on small devices such as phones and tablets
+        *  therefore, I have used media queries to hide the larger pixel width devices (i.e. laptops) as hidden,
+        *  when a certain pixel width is reached and vice versa.
+        */
+        .mobile-nav-bar{
+          display: none;
+        }
+        .laptop-nav-bar{
+          display: inline;
+        }
+        @media only screen 
+        /* I found that the nav bar used for large devices broke at 762px which will then hide it and show the mobile nav bar */
+          and (max-device-width : 762px) 
+          and (-webkit-min-device-pixel-ratio : 2)
+          and (orientation : portrait) 
+        {
+        .mobile-nav-bar{
+          display: inline;
+        }
 
+        .laptop-nav-bar{
+          display: none;
+        }
+      }
+
+      /* Show aqua underline for mobile nav bar to show which page you are on */
+      #show-page > small  {
+        text-decoration-line: underline;
+        text-decoration-color: aqua;
+      }
 
     </style>
 
@@ -110,17 +133,35 @@
     </div>
 
     
-<nav class="site-header sticky-top py-1" style="background-color: #ece8f8;" id="navbar">
-  <div class="container d-flex flex-column flex-md-row justify-content-between">
-    <a class="py-2" href="#" aria-label="Product">
-        <img id="weblogo" src="images/val-logo.jpg" alt="vals-web-logo" style="border-radius: 50%; height: 100px; width: 100px;">
-    </a>
-    <!-- using two classes separated by whitespace -->
-    <a href="frontpage.html" class="active py-2 d-none d-md-inline-block"><h2>Home&nbsp;<i class="fas fa-book" style="color:#CE93D8;"></i></h2></a>
-    <a href="cards.html" class="py-2 d-none d-md-inline-block"><h2>Cards&nbsp;<i class="bi bi-book-half" style="color:#CE93D8;"></i></h2></a>
-    <a href="paintings.html" class="py-2 d-none d-md-inline-block"><h2>Paintings&nbsp;<i class="fas fa-palette" style="color:#CE93D8;"></i></h2></a>
-  </div>
-</nav>
+    <!-- Laptop and Ipad navbar used until certain pixel width -->
+    <div class="laptop-nav-bar">
+      <nav class="site-header sticky-top py-1" style="background-color: #ece8f8;" id="navbar">
+        <div class="container-fluid d-flex flex-column flex-md-row justify-content-between">
+          <a class="py-2" href="#" aria-label="Product">
+              <img id="weblogo" src="images/val-logo.jpg" alt="vals-web-logo" style="border-radius: 50%; height: 100px; width: 100px;">
+          </a>
+          <!-- using two classes separated by whitespace -->
+          <a href="frontpage.html" class="active py-2 d-none d-md-inline-block"><h2>Home&nbsp;<i class="fas fa-book" style="color:#CE93D8;"></i></h2></a>
+          <a href="cards.html" class="py-2 d-none d-md-inline-block"><h2>Cards&nbsp;<i class="bi bi-book-half" style="color:#CE93D8;"></i></h2></a>
+          <a href="paintings.html" class="py-2 d-none d-md-inline-block"><h2>Paintings&nbsp;<i class="fas fa-palette" style="color:#CE93D8;"></i></h2></a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Mobiles and Iphone Navbar, hidden by media query until certain pixel width and vice versa -->
+    <div class="mobile-nav-bar">
+      <nav class="site-header sticky-top py-1" style="background-color: #ece8f8;" id="navbar">
+        <div class="container-fluid d-flex flex-column flex-md-row justify-content-between">
+          <a class="py-2" href="#" aria-label="Product">
+            <img id="weblogo" src="images/val-logo.jpg" alt="vals-web-logo" style="border-radius: 50%; height: 50px; width: 50px;">
+        </a>
+          <!-- using two classes separated by whitespace -->
+          <a href="frontpage.html" id="show-page" class="active"><i class="fas fa-book" style="color:#CE93D8;"></i><small>Home</small></a>
+          <a href="cards.html"><i class="bi bi-book-half" style="color:#CE93D8;"></i><small>Cards</small></a>
+          <a href="paintings.html"><i class="fas fa-palette" style="color:#CE93D8;"></i><small>Paintings</small></a>
+        </div>
+      </nav>
+    </div>
 
 <!-- homepage introduction image -->
 <div class="row">

@@ -27,7 +27,7 @@ img {
   cursor: hand;
 }
 
-/* consistent text font of times */
+/* consistent text font */
 p, h2, h4 {
   font-family: 'Times New Roman', Times, serif;
 }
@@ -54,10 +54,6 @@ p, h2, h4 {
     max-width: 960px;
 }
 
-/*
-* Custom translucent site header
-*/
-
 .site-header {
     background-color: rgba(0, 0, 0, .85);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -71,10 +67,6 @@ p, h2, h4 {
     color: #fff;
     text-decoration: none;
 }
-
-/*
-* Dummy devices (replace them with your own or something else entirely!)
-*/
 
 .product-device {
     position: absolute;
@@ -107,7 +99,6 @@ p, h2, h4 {
     background-color: #e5e5e5;
 }
 
-
 /*
 * Extra utilities
 */
@@ -127,7 +118,7 @@ p, h2, h4 {
     overflow: hidden; 
 }
   
-/* -------------------------ALBUM CSS-------------------------------- */
+/* -------------------------get bootstrap album CSS code-------------------------------- */
 .jumbotron {
     padding-top: 3rem;
     padding-bottom: 3rem;

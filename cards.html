@@ -85,11 +85,6 @@
         border-style: groove;
         border-color:aliceblue;
       }
-
-  body, html {width: 100%; height: 100%; margin: 0; padding: 0}
-  .row-container {display: flex; width: 100%; height: 100%; flex-direction: column; background-color: blue;   overflow: hidden;}
-  .first-row {background-color: lime; }
-  .second-row { flex-grow: 1; border: none; margin: 0; padding: 0; }
     
     /* Adding a border to all image tags, except the nav logo using :not css selector */
     img:not(#weblogo) {
@@ -107,6 +102,42 @@
       font-style: italic;
     }
 
+        /* My original navbar would break at certain pixel widths on small devices such as phones and tablets
+        *  therefore, I have used media queries to hide the larger pixel width devices (i.e. laptops) as hidden,
+        *  when a certain pixel width is reached and vice versa.
+        */
+        .mobile-nav-bar{
+          display: none;
+        }
+        .laptop-nav-bar{
+          display: inline;
+        }
+        @media only screen 
+        /* I found that the nav bar used for large devices broke at 762px which will then hide it and show the mobile nav bar */
+          and (max-device-width : 762px) 
+          and (-webkit-min-device-pixel-ratio : 2)
+          and (orientation : portrait) 
+        {
+        .mobile-nav-bar{
+          display: inline;
+        }
+
+        .laptop-nav-bar{
+          display: none;
+        }
+      }
+
+      /* Show white underline for mobile nav bar to show which page you are on */
+      .mobile-nav-bar > .active {
+        text-decoration-line: underline;
+      }
+
+      /* Show aqua underline for mobile nav bar to show which page you are on */
+      #show-page > small  {
+        text-decoration-line: underline;
+        text-decoration-color: aqua;
+      }
+
     </style>
 
   </head>
@@ -116,21 +147,39 @@
         <a id="header-anchor"></a>
     </div>
 
-    <nav class="site-header sticky-top py-1" style="background-color: #ece8f8;" id="navbar">
-      <div class="container d-flex flex-column flex-md-row justify-content-between">
-        <a class="py-2" href="#" aria-label="Product">
-            <img id="weblogo" src="images/val-logo.jpg" alt="vals-web-logo" style="border-radius: 50%; height: 100px; width: 100px;">
+    <!-- Laptop and Ipad navbar used until certain pixel width -->
+    <div class="laptop-nav-bar">
+      <nav class="site-header sticky-top py-1" style="background-color: #ece8f8;" id="navbar">
+        <div class="container-fluid d-flex flex-column flex-md-row justify-content-between">
+          <a class="py-2" href="#" aria-label="Product">
+              <img id="weblogo" src="images/val-logo.jpg" alt="vals-web-logo" style="border-radius: 50%; height: 100px; width: 100px;">
+          </a>
+          <!-- using two classes separated by whitespace -->
+          <a href="frontpage.html" class="py-2 d-none d-md-inline-block"><h2>Home&nbsp;<i class="fas fa-book" style="color:#CE93D8;"></i></h2></a>
+          <a href="cards.html" class="active py-2 d-none d-md-inline-block"><h2>Cards&nbsp;<i class="bi bi-book-half" style="color:#CE93D8;"></i></h2></a>
+          <a href="paintings.html" class="py-2 d-none d-md-inline-block"><h2>Paintings&nbsp;<i class="fas fa-palette" style="color:#CE93D8;"></i></h2></a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Mobiles and Iphone Navbar, hidden by media query until certain pixel width and vice versa -->
+    <div class="mobile-nav-bar">
+      <nav class="site-header sticky-top py-1" style="background-color: #ece8f8;" id="navbar">
+        <div class="container-fluid d-flex flex-column flex-md-row justify-content-between">
+          <a class="py-2" href="#" aria-label="Product">
+            <img id="weblogo" src="images/val-logo.jpg" alt="vals-web-logo" style="border-radius: 50%; height: 50px; width: 50px;">
         </a>
-        <!-- using two classes separated by whitespace -->
-        <a href="frontpage.html" class="py-2 d-none d-md-inline-block"><h2>Home&nbsp;<i class="fas fa-book" style="color:#CE93D8;"></i></h2></a>
-        <a href="cards.html" class="active py-2 d-none d-md-inline-block"><h2>Cards&nbsp;<i class="bi bi-book-half" style="color:#CE93D8;"></i></h2></a>
-        <a href="paintings.html" class="py-2 d-none d-md-inline-block"><h2>Paintings&nbsp;<i class="fas fa-palette" style="color:#CE93D8;"></i></h2></a>
-      </div>
-    </nav>
+          <!-- using two classes separated by whitespace -->
+          <a href="frontpage.html"><i class="fas fa-book" style="color:#CE93D8;"></i><small>Home</small></a>
+          <a href="cards.html" id="show-page" class="active"><i class="bi bi-book-half" style="color:#CE93D8;"></i><small>Cards</small></a>
+          <a href="paintings.html"><i class="fas fa-palette" style="color:#CE93D8;"></i><small>Paintings</small></a>
+        </div>
+      </nav>
+    </div>
 
 
-  <!-- Painting gallery with interactive hover effects, including alt text -->
-  <!-- Center main so content in the middle-->
+<!-- Painting gallery with interactive hover effects, including alt text -->
+<!-- Center main so content in the middle-->
 <main>
   <section class="jumbotron text-center" style="background-color:floralwhite">
     <div class="container">
