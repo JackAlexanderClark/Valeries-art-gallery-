@@ -4,100 +4,99 @@
 
 /* My CSS for frontpage, cards gallery and the paintings gallery */
 #frontpage-title {
-    position: relative;
-    text-align: center;
-    color: #8558A1; 
-    font-family:'Times New Roman', Times, serif; 
-    font-size: 76px; 
-    backface-visibility: hidden;
-    font-weight: normal; 
-    line-height: 52px;
-    margin: 0 0 16px; 
-    text-shadow: 5px 0 0 #add8e6;
-    position: relative;
-    padding-top: 15px; 
-    padding-bottom: 1px;
+  position: relative;
+  text-align: center;
+  color: #8558A1; 
+  font-family:'Times New Roman', Times, serif; 
+  font-size: 76px; 
+  backface-visibility: hidden;
+  font-weight: normal; 
+  line-height: 52px;
+  margin: 0 0 16px; 
+  text-shadow: 5px 0 0 #add8e6;
+  padding-top: 15px; 
+  padding-bottom: 1px;
 }
 
 /* hover effects for images in gallery */
 img {
-  cursor: hand;
+cursor: hand;
 }
 
 /* consistent text font */
 p, h2, h4 {
-  font-family: 'Times New Roman', Times, serif;
+font-family: 'Times New Roman', Times, serif;
 }
 
 /* eye catching heading */
 .heading-style {
-  font-weight: bold;
-  font-style: italic;
+font-weight: bold;
+font-style: italic;
 }
 
 /* Adding a border to show which page is active in the nav bar */
 /* highlight the child h2 tag inside of the active class so you can see which page you are on */
 .active > h2 {
-  background-color: #ecc1e1;
-  position: relative;
-  border-style: groove;
-  border-color:aliceblue;
+background-color: #ecc1e1;
+position: relative;
+border-style: groove;
+border-color:aliceblue;
 }
 
 /* image descriptions */
 .img-text {
-  text-align: center;
-  font-style: italic;
+text-align: center;
+font-style: italic;
 }
 
 span {
-  text-align: center;
+text-align: center;
 }
-        /* My original navbar would break at certain pixel widths on small devices such as phones and tablets
-        *  therefore, I have used media queries to hide the larger pixel width devices (i.e. laptops) as hidden,
-        *  when a certain pixel width is reached and vice versa.
-        */
-        .mobile-nav-bar{
-          display: none;
-        }
-        .laptop-nav-bar{
-          display: inline;
-        }
-        @media only screen 
-          and (max-device-width : 667px) 
-          and (orientation : portrait) 
-          and (-webkit-min-device-pixel-ratio : 2)
-        {
-        .mobile-nav-bar{
-          display: inline;
-        }
-
-        .laptop-nav-bar{
-          display: none;
-        }
-
-        /* Show aqua underline for mobile nav bar to show which page you are on */
-          #show-page > small  {
-          text-decoration-line: underline;
-          text-decoration-color: aqua;
-        }
+      /* My original navbar would break at certain pixel widths on small devices such as phones and tablets
+      *  therefore, I have used media queries to hide the larger pixel width devices (i.e. laptops) as hidden,
+      *  when a certain pixel width is reached and vice versa.
+      */
+      .mobile-nav-bar{
+        display: none;
+      }
+      .laptop-nav-bar{
+        display: inline;
+      }
+      @media only screen 
+        and (max-device-width : 667px) 
+        and (orientation : portrait) 
+        and (-webkit-min-device-pixel-ratio : 2)
+      {
+      .mobile-nav-bar{
+        display: inline;
       }
 
-      /* adding gallery effects for mouse hover */
-      .gray-fade-effect img{
-        opacity:1.0;
-        filter: grayscale(0%);
-        transition: 1.5s ease;
+      .laptop-nav-bar{
+        display: none;
       }
 
-      .gray-fade-effect img:hover{
-        opacity:0.5;
-        filter: grayscale(20%);
-        transition: 1.5s ease;
-        -webkit-transform: scale(1.05);
-        transform: scale(1.05);
-        -ms-transform: scale(1.05);
+      /* Show aqua underline for mobile nav bar to show which page you are on */
+        #show-page > small  {
+        text-decoration-line: underline;
+        text-decoration-color: aqua;
       }
+    }
+
+    /* adding gallery effects for mouse hover */
+    .gray-fade-effect img{
+      opacity:1.0;
+      filter: grayscale(0%);
+      transition: 1.5s ease;
+    }
+
+    .gray-fade-effect img:hover{
+      opacity:0.5;
+      filter: grayscale(20%);
+      transition: 1.5s ease;
+      -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      transform: scale(1.05);
+    }
 
 
 
@@ -106,52 +105,52 @@ span {
 */
 
 .container {
-    max-width: 960px;
+  max-width: 960px;
 }
 
 .site-header {
-    background-color: rgba(0, 0, 0, .85);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
 }
 .site-header a {
-    color: #999;
-    transition: ease-in-out color .15s;
+  color: #999;
+  transition: ease-in-out color .15s;
 }
 .site-header a:hover {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .product-device {
-    position: absolute;
-    right: 10%;
-    bottom: -30%;
-    width: 300px;
-    height: 540px;
-    background-color: #333;
-    border-radius: 21px;
-    -webkit-transform: rotate(30deg);
-    transform: rotate(30deg);
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
 }
 
 .product-device::before {
-    position: absolute;
-    top: 10%;
-    right: 10px;
-    bottom: 10%;
-    left: 10px;
-    content: "";
-    background-color: rgba(255, 255, 255, .1);
-    border-radius: 5px;
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
 }
 
 .product-device-2 {
-    top: -25%;
-    right: auto;
-    bottom: 0;
-    left: 5%;
-    background-color: #e5e5e5;
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
 }
 
 /*
@@ -159,51 +158,51 @@ span {
 */
 
 .flex-equal > * {
-    -ms-flex: 1;
-    flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 @media (min-width: 768px) {
-    .flex-md-equal > * {
-        -ms-flex: 1;
-        flex: 1;
-    }
+  .flex-md-equal > * {
+      -ms-flex: 1;
+      flex: 1;
+  }
 }
 
 .overflow-hidden { 
-    overflow: hidden; 
+  overflow: hidden; 
 }
-  
+
 /* -------------------------get bootstrap album CSS code-------------------------------- */
 .jumbotron {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    margin-bottom: 0;
-    background-color: #fff;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
-  @media (min-width: 768px) {
-    .jumbotron {
-      padding-top: 6rem;
-      padding-bottom: 6rem;
-    }
-  }
-  
-  .jumbotron p:last-child {
-    margin-bottom: 0;
-  }
-  
-  .jumbotron h1 {
-    font-weight: 300;
-  }
-  
-  .jumbotron .container {
-    max-width: 40rem;
-  }
-  
-  footer {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-  
-  footer p {
-    margin-bottom: .25rem;
-  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron h1 {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
