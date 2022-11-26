@@ -93,7 +93,7 @@
 
     p {
       font-family: 'Times New Roman', Times, serif;
-    }
+    } 
 
     .heading-style {
       font-weight: bold;
@@ -129,6 +129,22 @@
           text-decoration-line: underline;
           text-decoration-color: aqua;
         }
+      }
+
+      /* adding gallery effects for mouse hover */
+      .gray-fade-effect img{
+        opacity:1.0;
+        filter: grayscale(0%);
+        transition: 1.5s ease;
+      }
+
+      .gray-fade-effect img:hover{
+        opacity:0.5;
+        filter: grayscale(20%);
+        transition: 1.5s ease;
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+        -ms-transform: scale(1.05);
       }
 
     </style>
@@ -191,7 +207,9 @@
       <div class="row">
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
+              <div class="gray-fade-effect">
                     <img src="images/field-of-dandelions-card.jpg" alt="Field of Dandelions.jpg" class="bd-placeholder-img card-img-top" width="100" height="400">
+              </div>
                     <div><span class="img-text">Field of Dandelions. <b>£2.95</b></span>
                     </div>
                     <div class="card-body">
@@ -202,17 +220,21 @@
           
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
+              <div class="gray-fade-effect">
                     <img src="images/poppies-card.jpg" alt="Poppies and Gypsophila" class="bd-placeholder-img card-img-top" width="100" height="400">
+              </div>
                     <div><span class="img-text">Poppies and Gypsophila. <b>£2.95</b></span></div>
                     <div class="card-body">
-                        <p class="card-text">Watercolour study of beautiful flowers.</p> Small card.
+                        <p class="card-text">Watercolour study of beautiful flowers. Summer Painting.</p>
                     </div>
             </div>
         </div>            
 
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
+              <div class="gray-fade-effect">
                     <img src="images/guildhall-hereford-card.jpg" alt="The Guildhall - Hereford City" class="bd-placeholder-img card-img-top" width="100" height="400">
+              </div>
                     <div><span class="img-text">The Guildhall - Hereford City. <b>£2.95</b></span></div>
                     <div class="card-body">
                         <p class="card-text">Watercolour commissioned by the Mayor of Hereford.</p>
@@ -222,7 +244,9 @@
 
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
+              <div class="gray-fade-effect">
                     <img src="images/oxford-card.jpg" alt="Oxford" class="bd-placeholder-img card-img-top" width="100" height="400">
+              </div>
                     <div><span class="img-text">Oxford City Street. <b>£2.95</b></span></div>
                     <div class="card-body">
                         <p class="card-text">Bicycle City, a Watercolour street scene of Oxford.</p>
@@ -232,7 +256,9 @@
 
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
+              <div class="gray-fade-effect">
                     <img src="images/mistletoe-card.jpg" alt="Misletoe Tree - Worcester" class="bd-placeholder-img card-img-top" width="100" height="400">
+              </div>
                     <div><span class="img-text">Misletoe Tree - Worcester. <b>£2.95</b></span></div>
                     <div class="card-body">
                         <p class="card-text">Beautiful abstract Mistletoe tree in Herefordshire countryside.
@@ -243,28 +269,33 @@
 
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
+              <div class="gray-fade-effect">
                     <img src="images/venice-card.jpg" alt="Venice" class="bd-placeholder-img card-img-top" width="100" height="400">
+              </div>
                     <div><span class="img-text">Venice. <b>£2.95</b></span></div>
                     <div class="card-body">
-                        <p class="card-text">A sightseeing trip to Venice.</p>
-                        Small card.
+                        <p class="card-text">A sightseeing trip to Venice. Painted in Summer.</p>
                     </div>
             </div>
         </div> 
         
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
+            <div class="gray-fade-effect">
                   <img src="images/toll-card.jpg" alt="Toll card" class="bd-placeholder-img card-img-top" width="100" height="400">
+            </div>
                   <div><span class="img-text">Witney Toll Hay on Wye. <b>£2.95</b></span></div>
                   <div class="card-body">
-                      <p class="card-text">Iconic Toll bridge built in 1770’s.</p>Small card.
+                      <p class="card-text">Iconic Toll bridge built in 1770’s. Autumn Painting.</p>
                   </div>
             </div>
         </div> 
 
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
+              <div class="gray-fade-effect">
                     <img src="images/cherry-tree-card.jpg" alt="Cherry Tree, Tenbury Wells" class="bd-placeholder-img card-img-top" width="100" height="400">
+              </div>
                     <div><span class="img-text">Cherry Tree - Tenbury Wells.  <b>£2.95</b></span></div>
                     <div class="card-body">
                         <p class="card-text">Beautiful Cherry tree blossom painted at Artist’s own home.
@@ -275,7 +306,9 @@
 
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
+              <div class="gray-fade-effect">
                     <img src="images/pears-card.jpg" alt="Pears on a Blue Plate" class="bd-placeholder-img card-img-top" width="100" height="400">
+              </div>
                     <div><span class="img-text">Bowl of fruit.  <b>£2.95</b></span></div>
                     <div class="card-body">
                         <p class="card-text">Classic still life portrait of locally produced pears.</p>
@@ -284,17 +317,21 @@
         </div> 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
+            <div class="gray-fade-effect">
                   <img src="images/windrush-valley-snow-card.jpg" alt="Windrush Valley in Snow" class="bd-placeholder-img card-img-top" width="100" height="400">
+            </div>
                   <div><span class="img-text">Windrush Valley in Snow. <b>£2.95</b></span></div>
                   <div class="card-body">
-                      <p class="card-text">Winter scene beside the river. A winter scene in December.</p>
+                      <p class="card-text">Winter scene beside the river. Taken in December.</p>
                   </div>
             </div>
         </div> 
 
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
+              <div class="gray-fade-effect">
                     <img src="images/wave-card.jpg" alt="Wow! What a Wave" class="bd-placeholder-img card-img-top" width="100" height="400">
+              </div>
                     <div><span class="img-text">Wow! What a Wave! <b>£2.95</b></span></div>
                     <div class="card-body">
                         <p class="card-text">The power of the wave, captured on a Cornish beach.</p>
@@ -304,7 +341,9 @@
 
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
+              <div class="gray-fade-effect">
                     <img src="images/caerfai-bay-card.jpg" alt="Caerfai Bay in Moonlight" class="bd-placeholder-img card-img-top" width="100" height="400">
+              </div>
                     <div><span class="img-text">Caerfai Bay in Moonlight. <b>£2.95</b></span></div>
                     <div class="card-body">
                         <p class="card-text">A serene watercolour on the Pembrokeshire Coast.</p>
@@ -327,13 +366,6 @@
         <h5>
           Please email me any painting or card items you are interested in and wish to purchase. Any feedback and comments would also be appreciated. <br><b style="color:#4A9DDD;font-style: italic; padding-top: 20px;">Valerie.Turner@gmail.com</b>
         </h5>
-        <div class="row3" style="padding-top: 5px;">
-            <div class="col-sm">
-                <hr>
-                <p id="email" style="font-style:oblique;"></p>
-                <p style="text-align:center; font-family: 'Times New Roman', Times, serif;">All rights to the Artwork belong to Valerie Turner. Thank you for visiting my website.</p>
-            </div>
-        </div>
         <div class="centered">
             <!-- css anchor tag to return to top of page for easier navigation -->
             <a href="#header-anchor" style="color:blueviolet;"><p style="text-align:center;"> Click here to return to top of the page <i class="fa-solid fa-arrow-pointer" style="color:blueviolet;" ></i> </p></a>

@@ -58,6 +58,8 @@ Laptop:
 Mobile: 
 <img width="435" alt="image" src="https://user-images.githubusercontent.com/97599832/204100220-9c18d986-1e41-40e2-abf0-6c3c2da80277.png">
 
+9. All images contain alt - text to describe basic image.
+
 # **IV) Technology and Tools Used**
 1. HTML
 2. CSS

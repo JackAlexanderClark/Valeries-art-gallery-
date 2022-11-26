@@ -46,7 +46,7 @@ p, h2, h4 {
   border-color:aliceblue;
 }
 
-.img-text, .card-text {
+.img-text .card-text {
   text-align: center;
 }
 
