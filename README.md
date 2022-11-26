@@ -6,7 +6,7 @@
 # Project website link (GitHub Pages): https://jackalexanderclark.github.io/Valeries-art-gallery-/frontpage.html
 
 ## Website Device Mockup
-<img width="879" alt="image" src="https://user-images.githubusercontent.com/97599832/203627868-9015279e-3bf7-4872-ab1a-57f437ab7bae.png">
+![all-devices-white (1)](https://user-images.githubusercontent.com/97599832/204106003-dfcbb75c-4d19-475f-b8b7-1c5d8766af38.png)
 
 
 # **I) Introduction and Project Goals**
