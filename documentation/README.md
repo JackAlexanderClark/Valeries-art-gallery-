@@ -6,8 +6,7 @@
 # Project website link (GitHub Pages): https://jackalexanderclark.github.io/Valeries-art-gallery-/frontpage.html
 
 ## Website Device Mockup
-<img width="879" alt="image" src="https://user-images.githubusercontent.com/97599832/203627868-9015279e-3bf7-4872-ab1a-57f437ab7bae.png">
-
+![all-devices-white (1)](https://user-images.githubusercontent.com/97599832/204106003-dfcbb75c-4d19-475f-b8b7-1c5d8766af38.png)
 
 # **I) Introduction and Project Goals**
 1. For my user centric frontend project, I decided to build a website to display my grandmothers artwork, from the start I knew I wanted a 3 page layout; firstly an introductory home page with a basic biography and information related to influences and styles, a second gallery page for her card collection and a third page for her framed paintings.
@@ -20,6 +19,9 @@
 2. This was my first wireframe plan, for my first prototype and layout. Made using software from: "https://balsamiq.com/wireframes/":
 
 ![Wireframe](https://user-images.githubusercontent.com/97599832/180777531-687a10f0-2b01-47cc-b4ae-8c9e61623ef1.JPG)
+
+3. I decided on a page structure of 3 elements; firstly a navigation bar header with links to the other pages, secondly a body section which would contain all the elements such as text and images and thirdly a footer with contact details and an option to return to the top of the page.
+
 
 # **III) Improvements from User Feedback**
 1. I asked a variety of people from my workplace to my family and for the most impartial feedback tutors from Code Institute - to give me their initial thoughts and feedback as users of my website. 
