@@ -104,7 +104,7 @@
         }
         @media only screen 
         /* I found that the nav bar used for large devices broke at 762px which will then hide it and show the mobile nav bar */
-          and (max-device-width : 762px) 
+          and (max-device-width : 644px) 
           and (-webkit-min-device-pixel-ratio : 2)
           and (orientation : portrait) 
         {
@@ -115,13 +115,15 @@
         .laptop-nav-bar{
           display: none;
         }
+        
+        /* Show aqua underline for mobile nav bar to show which page you are on */
+        #show-page > small  {
+          text-decoration-line: underline;
+          text-decoration-color: aqua;
+        }
       }
 
-      /* Show aqua underline for mobile nav bar to show which page you are on */
-      #show-page > small  {
-        text-decoration-line: underline;
-        text-decoration-color: aqua;
-      }
+
 
     </style>
 

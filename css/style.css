@@ -46,6 +46,14 @@ p, h2, h4 {
   border-color:aliceblue;
 }
 
+.img-text, .card-text {
+  text-align: center;
+}
+
+span {
+  text-align: center;
+}
+
 /* Code courtesey of GetBoostrap templates 
 * Credit: https://getbootstrap.com/docs/4.6/examples/product/ 
 */

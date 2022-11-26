@@ -87,8 +87,6 @@
       font-family: 'Times New Roman', Times, serif;
     }
 
-    /* #youtube-video {
-    } */
     .heading-style {
       font-weight: bold;
       font-style: italic;
@@ -116,19 +114,16 @@
         .laptop-nav-bar{
           display: none;
         }
+
+        /* Show aqua underline for mobile nav bar to show which page you are on */
+          #show-page > small  {
+          text-decoration-line: underline;
+          text-decoration-color: aqua;
+        }
       }
 
-      /* Show white underline for mobile nav bar to show which page you are on */
-      .mobile-nav-bar > .active {
-        text-decoration-line: underline;
-        color: black;
-      }
 
-      /* Show aqua underline for mobile nav bar to show which page you are on */
-      #show-page > small  {
-        text-decoration-line: underline;
-        text-decoration-color: aqua;
-      }
+
 
     </style>
 
@@ -162,14 +157,12 @@
             <img id="weblogo" src="images/val-logo.jpg" alt="vals-web-logo" style="border-radius: 50%; height: 50px; width: 50px;">
         </a>
           <!-- using two classes separated by whitespace -->
-          <a href="frontpage.html"><i class="fas fa-book" style="color:#CE93D8;"><small>Home</small></i></a>
-          <a href="cards.html"><i class="bi bi-book-half" style="color:#CE93D8;"><small>Cards</small></i></a>
-          <a href="paintings.html" id="show-page" class="active"><i class="fas fa-palette" style="color:#CE93D8;"><small>Paintings</small></i></a>
+          <a href="frontpage.html"><i class="fas fa-book" style="color:#CE93D8;"></i><small>Home</small></a>
+          <a href="cards.html"><i class="bi bi-book-half" style="color:#CE93D8;"></i><small>Cards</small></a>
+          <a href="paintings.html" id="show-page" class="active"><i class="fas fa-palette" style="color:#CE93D8;"></i><small>Paintings</small></a>
         </div>
       </nav>
     </div>
-
-
 
 <!-- Painting gallery with interactive hover effects, including alt text -->
 <!-- Center main so content in the middle-->
@@ -190,8 +183,8 @@
       <div class="row">
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-                    <img src="images/redflowers.jpg" alt="Croscosmia Lucifer in Glass Vase" class="bd-placeholder-img card-img-top" width="80" height="500">
-                    <div><span class="img-text">&nbsp;Vase of Flowers. 20.5 x 24 ins. Glass and Green/Cream Frame <b>£95</b></span>
+                    <img src="images/redflowers.jpg" alt="Croscosmia Lucifer in Glass Vase" class="bd-placeholder-img card-img-top" width="100" height="400">
+                    <div><span class="img-text">Vase of Flowers. 20.5 x 24 ins. Glass and Green/Cream Frame <b>£95</b></span>
                     </div>
                     <div class="card-body">
                         <p class="card-text">Watercolour original of Fragrant Summer Blooms.</p>
@@ -201,18 +194,18 @@
           
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-                    <img src="images/out-to-sea.jpg" alt="Out to sea" class="bd-placeholder-img card-img-top" width="80" height="500">
-                    <div><span class="img-text">&nbsp;Out to Sea Acrylic. Glass Frame Grey Wood 20.5 x 24 ins. <b>£95</b></span></div>
+                    <img src="images/out-to-sea.jpg" alt="Out to sea" class="bd-placeholder-img card-img-top" width="100" height="400">
+                    <div><span class="img-text">Out to Sea Acrylic. Glass Frame Grey Wood 20.5 x 24 ins. <b>£95</b></span></div>
                     <div class="card-body">
-                        <p class="card-text">&nbsp;Acrylic painting of boat venturing out on the Pembrokeshire Coastline.</p>
+                        <p class="card-text">Acrylic painting of boat venturing out on the Pembrokeshire Coastline.</p>
                     </div>
             </div>
         </div>            
 
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-                    <img src="images/field-of-dandelions-framed.jpg" alt="Field of Dandielions" class="bd-placeholder-img card-img-top" width="80" height="500">
-                    <div><span class="img-text">&nbsp;Field of Dandielions. Glass and Green/Cream Frame 17 x 21 ins. <b>£200</b></span></div>
+                    <img src="images/field-of-dandelions-framed.jpg" alt="Field of Dandielions" class="bd-placeholder-img card-img-top" width="100" height="400">
+                    <div><span class="img-text">Field of Dandielions. Glass and Green/Cream Frame 17 x 21 ins. <b>£200</b></span></div>
                     <div class="card-body">
                         <p class="card-text">Original watercolour set in field full of dandelions in a Herefordshire Valley.</p>
                     </div>
@@ -221,8 +214,8 @@
 
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-                    <img src="images/venice-framed.jpg" alt="Venice" class="bd-placeholder-img card-img-top" width="80" height="500">
-                    <div><span class="img-text">&nbsp;Venice Watercolour. Under Class. Cream and Gold Frame. <b>£500</b></span></div>
+                    <img src="images/venice-framed.jpg" alt="Venice" class="bd-placeholder-img card-img-top" width="100" height="400">
+                    <div><span class="img-text">Venice Watercolour. Under Class. Cream and Gold Frame. <b>£500</b></span></div>
                     <div class="card-body">
                         <p class="card-text">Iconic view of approaching Venice from the water.</p>
                     </div>
@@ -231,11 +224,11 @@
 
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-                    <img src="images/toll-frame.jpg" alt="Watercolour in Green" class="bd-placeholder-img card-img-top" width="80" height="500">
-                    <div><span class="img-text">&nbsp;Witney Toll, Hay on Wye.
+                    <img src="images/toll-frame.jpg" alt="Watercolour in Green" class="bd-placeholder-img card-img-top" width="100" height="400">
+                    <div><span class="img-text">Witney Toll, Hay on Wye.
                         Watercolour in Green/Gold Frame. 21 x 17 ins. <b>£250</b></span></div>
                     <div class="card-body">
-                        <p class="card-text">IIconic Toll Bridge on the way to the literary town of Hay on Wye.
+                        <p class="card-text">Iconic Toll Bridge on the way to the literary town of Hay on Wye.
                         </p>
                     </div>
             </div>
@@ -243,8 +236,8 @@
 
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-                    <img src="images/shopping-frame.jpg" alt="Charity Shop, Ternbury Wells" class="bd-placeholder-img card-img-top" width="80" height="500">
-                    <div><span class="img-text">&nbsp;Charity Shop, Ternbury Wells. Glass/White Frame. 18 x 15 ins. <b>£200</b></span></div>
+                    <img src="images/shopping-frame.jpg" alt="Charity Shop, Ternbury Wells" class="bd-placeholder-img card-img-top" width="100" height="400">
+                    <div><span class="img-text">Charity Shop, Ternbury Wells. Glass/White Frame. 18 x 15 ins. <b>£200</b></span></div>
                     <div class="card-body">
                         <p class="card-text">
                           Window shopping in Tenbury Wells.
