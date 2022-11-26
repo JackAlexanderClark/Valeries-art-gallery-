@@ -1,5 +1,3 @@
-# Valeries-art-gallery-
-Code Institute - Project 1
 # README DOCUMENTATION
 
 # **Milestone Project 1 - User Centric Frontend Development**
@@ -22,6 +20,9 @@ Code Institute - Project 1
 2. This was my first wireframe plan, for my first prototype and layout. Made using software from: "https://balsamiq.com/wireframes/":
 
 ![Wireframe](https://user-images.githubusercontent.com/97599832/180777531-687a10f0-2b01-47cc-b4ae-8c9e61623ef1.JPG)
+
+3. I decided on a page structure of 3 elements; firstly a navigation bar header with links to the other pages, secondly a body section which would contain all the elements such as text and images and thirdly a footer with contact details and an option to return to the top of the page.
+
 
 # **III) Improvements from User Feedback**
 1. I asked a variety of people from my workplace to my family and for the most impartial feedback tutors from Code Institute - to give me their initial thoughts and feedback as users of my website. 
@@ -64,7 +65,6 @@ However, this gallery did not display well at certain breakpoints. Also suggeste
 ![mobile-white](https://user-images.githubusercontent.com/97599832/204100084-bd2eea2f-c1db-4524-8a6d-4467c25f033d.png)
 
 By using Chrome Dev Tools, I added media queries for this certain width to hide the navbar and instead show a mobile designed navbar with a smaller logo and and text. Examples shown below:
-
 Laptop: 
 
 <img width="570" alt="image" src="https://user-images.githubusercontent.com/97599832/204100188-2102a40e-7c58-4158-a02c-af2ec06e2635.png">
