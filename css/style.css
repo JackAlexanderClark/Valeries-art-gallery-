@@ -20,7 +20,7 @@
 
 /* hover effects for images in gallery */
 img {
-cursor: hand;
+  cursor: pointer;
 }
 
 /* consistent text font */
