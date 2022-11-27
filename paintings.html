@@ -7,7 +7,8 @@
     <!-- Credit and source from Getbootstrap-->
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.101.0">
-    <title>Home Page</title>
+    <title>Painting Gallery</title>
+
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/album/">
@@ -28,12 +29,12 @@
     <style>
       /* Credit and Source: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp   */
       /* Style the navbar */
-      #navbar {
+      .navbar {
         overflow: hidden;
       }
 
       /* Navbar links */
-      #navbar a {
+      .navbar a {
         float: left;
         display: block;
         text-align: center;
@@ -77,7 +78,7 @@
       }
     
     /* Adding a border to all image tags, except the nav logo using :not css selector */
-    img:not(#weblogo) {
+    img:not(.weblogo) {
         border: 5px solid rgb(194, 191, 191);
     }
 
@@ -101,10 +102,10 @@
 
     <!-- Laptop and Ipad navbar used until certain pixel width -->
     <div class="laptop-nav-bar">
-      <nav class="site-header sticky-top py-1" style="background-color: #ece8f8;" id="navbar">
+      <nav class="site-header sticky-top py-1 navbar" style="background-color: #ece8f8;">
         <div class="container-fluid d-flex flex-column flex-md-row justify-content-between">
           <a class="py-2" href="#" aria-label="Product">
-              <img id="weblogo" src="images/val-logo.jpg" alt="vals-web-logo" style="border-radius: 50%; height: 100px; width: 100px;">
+              <img class="weblogo" src="images/val-logo.jpg" alt="vals-web-logo" style="border-radius: 50%; height: 100px; width: 100px;">
           </a>
           <!-- using two classes separated by whitespace -->
           <a href="frontpage.html" class="py-2 d-none d-md-inline-block"><h2>Home&nbsp;<i class="fas fa-book" style="color:#CE93D8;"></i></h2></a>
@@ -116,10 +117,10 @@
 
     <!-- Mobiles and Iphone Navbar, hidden by media query until certain pixel width and vice versa -->
     <div class="mobile-nav-bar">
-      <nav class="site-header sticky-top py-1" style="background-color: #ece8f8;" id="navbar">
+      <nav class="site-header sticky-top py-1 navbar" style="background-color: #ece8f8;">
         <div class="container-fluid d-flex flex-column flex-md-row justify-content-between">
           <a class="py-2" href="#" aria-label="Product">
-            <img id="weblogo" src="images/val-logo.jpg" alt="vals-web-logo" style="border-radius: 50%; height: 50px; width: 50px;">
+            <img class="weblogo" src="images/val-logo.jpg" alt="vals-web-logo" style="border-radius: 50%; height: 50px; width: 50px;">
         </a>
           <!-- using two classes separated by whitespace -->
           <a href="frontpage.html"><i class="fas fa-book" style="color:#CE93D8;"></i><small>Home</small></a>
