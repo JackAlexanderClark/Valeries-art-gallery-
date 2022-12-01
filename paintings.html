@@ -257,7 +257,7 @@
 // Code credit and source: "https://www.w3schools.com/howto/howto_js_navbar_sticky.asp"
 window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementById("navbar");
+var navbar = document.getElementsByClassName("navbar");
 var sticky = navbar.offsetTop;
 function myFunction() {
   if (window.pageYOffset >= sticky) {
