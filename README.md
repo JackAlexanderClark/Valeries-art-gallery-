@@ -86,7 +86,16 @@ Mobile:
 7. Font Awesome (icons)
 8. Testing: Chrome Dev Tools and W3C CSS Validator
 
-# **V) Acknowledgements and Code Credit**
+# **V) Testing
+Lighthouse Website Performance Results: WebPageTest
+![image](https://user-images.githubusercontent.com/97599832/218317113-464e3bec-a0d1-4ef5-9993-e43331f778f7.png)
+
+### Nu HTML Validator 
+1. Frontpage.html
+
+
+
+# **VI) Acknowledgements and Code Credit**
 1. Credit and thanks to Valerie Turner for his Artwork featured on this website.
 2. Credit for GetBootstrap Templates; Album and Product. Source: "https://getbootstrap.com/docs/4.6/examples/album/", "https://getbootstrap.com/docs/4.6/examples/product/".
 3. Credit for Sticky Navigation Bar. Source "https://www.w3schools.com/howto/howto_js_navbar_sticky.asp"
