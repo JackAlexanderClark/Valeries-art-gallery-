@@ -1,6 +1,7 @@
 # README DOCUMENTATION
 
 # **Milestone Project 1 - User Centric Frontend Development**
+## Static Website to display the work of an artist for people to explore.
 ### (HTML/CSS)
 # Author: Jack Clark (Contact Me - jackalexanderclark@protonmail.com)
 
