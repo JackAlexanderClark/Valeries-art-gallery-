@@ -64,7 +64,7 @@ text-align: center;
   display: inline;
 }
 @media only screen 
-  and (max-device-width : 667px) 
+  and (max-width : 667px) 
   and (orientation : portrait) 
   and (-webkit-min-device-pixel-ratio : 2)
 {
@@ -94,8 +94,6 @@ text-align: center;
       opacity:0.5;
       filter: grayscale(20%);
       transition: 1.5s ease;
-      -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
       transform: scale(1.05);
     }
 
@@ -130,7 +128,6 @@ text-align: center;
   height: 540px;
   background-color: #333;
   border-radius: 21px;
-  -webkit-transform: rotate(30deg);
   transform: rotate(30deg);
 }
 
@@ -151,21 +148,6 @@ text-align: center;
   bottom: 0;
   left: 5%;
   background-color: #e5e5e5;
-}
-
-/*
-* Extra utilities
-*/
-
-.flex-equal > * {
-  -ms-flex: 1;
-  flex: 1;
-}
-@media (min-width: 768px) {
-  .flex-md-equal > * {
-      -ms-flex: 1;
-      flex: 1;
-  }
 }
 
 .overflow-hidden { 
@@ -203,11 +185,6 @@ footer {
   padding-bottom: 3rem;
 }
 
-footer p {
+footer, p {
   margin-bottom: .25rem;
 }
-
-/*
-* Put through validator: https://www.cssportal.com/css-validator/
-* only issues are due to bootstrap css, which are necessary to keep in.
-*/
