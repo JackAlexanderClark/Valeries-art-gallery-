@@ -1,6 +1,7 @@
 # README DOCUMENTATION
 
 # **Milestone Project 1 - User Centric Frontend Development**
+### (HTML/CSS)
 # Author: Jack Clark (Contact Me - jackalexanderclark@protonmail.com)
 
 # Project website link (GitHub Pages): https://jackalexanderclark.github.io/Valeries-art-gallery-/frontpage.html
