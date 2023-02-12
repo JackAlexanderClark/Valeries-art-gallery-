@@ -188,8 +188,3 @@ footer {
 footer p {
   margin-bottom: .25rem;
 }
-
-/*
-* Put through validator: https://www.cssportal.com/css-validator/
-* only issues are due to bootstrap css, which are necessary to keep in.
-*/
