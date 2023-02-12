@@ -98,7 +98,7 @@ Mobile:
 Lighthouse Website Performance Results: WebPageTest
 ![image](https://user-images.githubusercontent.com/97599832/218317113-464e3bec-a0d1-4ef5-9993-e43331f778f7.png)
 
-### Nu HTML Validator 
+### Nu HTML Validator: https://validator.w3.org/nu/
 1. Frontpage.html
 ![image](https://user-images.githubusercontent.com/97599832/218317904-7f0789d4-dfe3-41eb-ae96-fe9f01504cb1.png)
 
@@ -108,6 +108,13 @@ Lighthouse Website Performance Results: WebPageTest
 3. Paintings.html
 
 ![image](https://user-images.githubusercontent.com/97599832/218317962-f7c804dd-0e81-414a-88c6-5ac62a4c2b9b.png)
+
+### W3C CSS Validator: https://jigsaw.w3.org/css-validator/
+![image](https://user-images.githubusercontent.com/97599832/218318510-50b68c22-8e09-4f86-a34d-7a77cde3035d.png)
+
+- Fix CSS validator issues
+![image](https://user-images.githubusercontent.com/97599832/218319006-d017daae-1e14-4f52-821f-d7da3cc636cd.png)
+
 
 # **V) Technology and Tools Used**
 1. HTML
