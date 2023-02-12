@@ -10,6 +10,7 @@
 ![all-devices-white (1)](https://user-images.githubusercontent.com/97599832/204106003-dfcbb75c-4d19-475f-b8b7-1c5d8766af38.png)
 
 <hr>
+
 ## Contents:
 <ol>
   <li>Introduction</li>
@@ -20,6 +21,7 @@
   <li>Acknowledgements</li>
 </ol>
 <hr>
+
 # **I) Introduction and Project Goals**
 1. For my user centric frontend project, I decided to build a website to display my grandmothers artwork, from the start I knew I wanted a 3 page layout; firstly an introductory home page with a basic biography and information related to influences and styles, a second gallery page for her card collection and a third page for her framed paintings.
 2. The main story for design I had was two pillars; viewing and learning. That it is easily accessible to straight away understand the kind of art displayed. I also refrained from adding to many effects that would over-saturated the artwork and hence kept a modest and simplistic approach.
