@@ -9,7 +9,17 @@
 ## Website Device Mockup
 ![all-devices-white (1)](https://user-images.githubusercontent.com/97599832/204106003-dfcbb75c-4d19-475f-b8b7-1c5d8766af38.png)
 
-
+<hr>
+## Contents:
+<ol>
+  <li>Introduction</li>
+  <li>Design</li>
+  <li>User Stories and Feedback</li>
+  <li>Testing</li>
+  <li>Technology</li>
+  <li>Acknowledgements</li>
+</ol>
+<hr>
 # **I) Introduction and Project Goals**
 1. For my user centric frontend project, I decided to build a website to display my grandmothers artwork, from the start I knew I wanted a 3 page layout; firstly an introductory home page with a basic biography and information related to influences and styles, a second gallery page for her card collection and a third page for her framed paintings.
 2. The main story for design I had was two pillars; viewing and learning. That it is easily accessible to straight away understand the kind of art displayed. I also refrained from adding to many effects that would over-saturated the artwork and hence kept a modest and simplistic approach.
@@ -23,6 +33,11 @@
 ![Wireframe](https://user-images.githubusercontent.com/97599832/180777531-687a10f0-2b01-47cc-b4ae-8c9e61623ef1.JPG)
 
 3. I decided on a page structure of 3 elements; firstly a navigation bar header with links to the other pages, secondly a body section which would contain all the elements such as text and images and thirdly a footer with contact details and an option to return to the top of the page.
+
+## User Stories
+
+
+
 
 
 # **III) Improvements from User Feedback**
@@ -76,17 +91,8 @@ Mobile:
 
 9. All images contain alt - text to describe basic image.
 
-# **IV) Technology and Tools Used**
-1. HTML
-2. CSS
-3. JavaScript
-4. Chrome Dev Tools
-5. Version Control, IDE and Deployment: GitHub, GitPod and GitHub Pages
-6. Bootstrap Framework
-7. Font Awesome (icons)
-8. Testing: Chrome Dev Tools and W3C CSS Validator
 
-# V) Testing
+# IV) Testing
 Lighthouse Website Performance Results: WebPageTest
 ![image](https://user-images.githubusercontent.com/97599832/218317113-464e3bec-a0d1-4ef5-9993-e43331f778f7.png)
 
@@ -98,8 +104,18 @@ Lighthouse Website Performance Results: WebPageTest
 ![image](https://user-images.githubusercontent.com/97599832/218317938-3d4e9124-1f9b-410f-b243-ab86d8be9bd4.png)
 
 3. Paintings.html
+
 ![image](https://user-images.githubusercontent.com/97599832/218317962-f7c804dd-0e81-414a-88c6-5ac62a4c2b9b.png)
 
+# **V) Technology and Tools Used**
+1. HTML
+2. CSS
+3. JavaScript
+4. Chrome Dev Tools
+5. Version Control, IDE and Deployment: GitHub, GitPod and GitHub Pages
+6. Bootstrap Framework
+7. Font Awesome (icons)
+8. Testing: Chrome Dev Tools and W3C CSS Validator
 
 
 # **VI) Acknowledgements and Code Credit**
