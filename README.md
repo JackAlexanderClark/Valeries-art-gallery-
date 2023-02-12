@@ -38,26 +38,20 @@
 
 ## User Stories
 <h3>First-time Website Visitor:</h3>
-<ul>
-<li>As a first-time website visitor, I am looking to learn more about the art gallery and the type of art they showcase. I want a simple and intuitive experience that allows me to easily navigate the website and find what I am looking for.</li>
-
-<li>I land on the home page of the website and am immediately drawn to the beautiful art featured on the banner.</li>
-<li>I notice the clear and concise navigation menu at the top of the page, which includes links to the About, Art Collection, Events, and Contact pages.</li>
-<li>I click on the "About" page to learn more about the gallery's history and mission. I appreciate the detailed information and high-quality images that give me a better understanding of the gallery's culture and values.</li>
-<li>Next, I click on the "Art Collection" page to see what type of art is on display. I am pleased to see that the page is well organized and easy to navigate, with filters for different mediums, artists, and collections.</li>
-<li>I decide to attend an upcoming event and click on the "Events" page to find out more information. I am impressed by the variety of events being held and the ease with which I can RSVP and add the event to my calendar.</li>
-<li>Finally, I want to reach out to the gallery for additional information, so I click on the "Contact" page and fill out the contact form with my inquiry.</li>
-
-<h3>Frequent Website Visitor:</h3>
-<li>As a frequent website visitor, I am looking to stay up-to-date on the latest art exhibitions and events being held at the gallery. I want a quick and convenient way to access this information and keep track of my favorite art and artists.</li>
-
-<li>I land on the home page of the website and immediately notice the latest exhibition featured on the banner. I am excited to see that there is a new show featuring one of my favorite artists.</li>
-<li>I use the navigation menu to quickly jump to the "Events" page and RSVP for the opening reception. I appreciate the reminder notifications and the option to add the event to my calendar.</li>
-<li>I then visit the "Art Collection" page to browse the latest additions to the collection. I use the "Favorites" feature to save a few pieces that catch my eye and make a note to schedule a time to view them in person.</li>
-<li>I also take a moment to check out the "News" section to stay informed on the latest happenings at the gallery, such as new acquisitions and awards.</li>
-<li>Finally, I use the "My Account" page to update my contact information and preferences, ensuring that I receive the latest updates and invitations to events.</li>
+<ul>As a first-time website visitor, I am interested in learning more about the artist and their work. I want to get a sense and appreciation of their style and see examples of their art work, whether paintings or cards.
+<li>I will want to view an image featuring one of the artist's pieces on the home page, to immediately see their style.</li>
+<li>I want to explore the navigation menu to find out more about the artist, including their biography, art and their contact details.</li>
+<li>I will want to view a "Biography" page to learn about the artist's background, inspiration, and creative process for their art.</li>
+<li>Finally, I want to be able to contact the artist by being able to contact email address on the "Contact" page.</li>
 </ul>
-
+  
+<h3>Frequent Website Visitor:</h3>
+<ul>As a frequent website visitor, I am a fan of the artist and want to stay up-to-date on their latest work.
+  <li>I am a fan of the artist and want to stay up-to-date on their latest work.</li>
+  <li>I want an easy and convenient way to contact the artist.</li>
+</ul>
+  
+</ul>
 # **III) Improvements from User Feedback**
 1. I asked a variety of people from my workplace to my family and for the most impartial feedback tutors from Code Institute - to give me their initial thoughts and feedback as users of my website. 
 2. **User 1**: Liked the appearance of my original gallery design:
