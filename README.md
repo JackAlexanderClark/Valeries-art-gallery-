@@ -51,7 +51,6 @@
   <li>I want an easy and convenient way to contact the artist.</li>
 </ul>
   
-</ul>
 # **III) Improvements from User Feedback**
 1. I asked a variety of people from my workplace to my family and for the most impartial feedback tutors from Code Institute - to give me their initial thoughts and feedback as users of my website. 
 2. **User 1**: Liked the appearance of my original gallery design:
