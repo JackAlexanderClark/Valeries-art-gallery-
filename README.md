@@ -98,7 +98,7 @@ Lighthouse Website Performance Results: WebPageTest
 ![image](https://user-images.githubusercontent.com/97599832/218317938-3d4e9124-1f9b-410f-b243-ab86d8be9bd4.png)
 
 3. Paintings.html
-4. [image](https://user-images.githubusercontent.com/97599832/218317962-f7c804dd-0e81-414a-88c6-5ac62a4c2b9b.png)
+![image](https://user-images.githubusercontent.com/97599832/218317962-f7c804dd-0e81-414a-88c6-5ac62a4c2b9b.png)
 
 
 
