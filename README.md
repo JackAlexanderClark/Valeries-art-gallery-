@@ -147,7 +147,7 @@ Lighthouse Website Performance Results: WebPageTest
 <hr>
 
 # **VI) Acknowledgements and Code Credit**
-1. Credit and thanks to Valerie Turner for his Artwork featured on this website.
+1. Credit and thanks to Valerie Turner for her Artwork featured on this website.
 2. Credit for GetBootstrap Templates; Album and Product. Source: "https://getbootstrap.com/docs/4.6/examples/album/", "https://getbootstrap.com/docs/4.6/examples/product/".
 3. Credit for Sticky Navigation Bar. Source "https://www.w3schools.com/howto/howto_js_navbar_sticky.asp"
 
