@@ -28,6 +28,8 @@
 3. My project went through two phases of iteration. I originally designed my art gallery website statically with HTML and CSS without bootstrap. Primarily, through the lens of my laptop - which would later lead to issues with mobile and iPad devices etc.
 4. After feedback from users and my Code Institute tutors, I rebuilt my website from the ground up but this time using Bootstrap templates (product and album), this gave my second website a much better flow and layout and all scaled well with other devices.
 
+<hr>
+
 # **II) Planning and Design Philosophy**
 1. I took a lot of input from my grandmother "Valerie Turner", she gave me her ideas and agreed with my approach of a 3 page layout. She also was clear that her favourite colours lie within the purple and violet family. This directed me to use shades of purples and violets in the website backgrounds. I used the tool: "https://redketchup.io/color-picker" to find HEX colours and related shades for visual appeal and consistency.
 2. This was my first wireframe plan, for my first prototype and layout. Made using software from: "https://balsamiq.com/wireframes/":
@@ -50,6 +52,8 @@
   <li>I am a fan of the artist and want to stay up-to-date on their latest work.</li>
   <li>I want an easy and convenient way to contact the artist.</li>
 </ul>
+  
+<hr>
   
 # **III) Improvements from User Feedback**
 1. I asked a variety of people from my workplace to my family and for the most impartial feedback tutors from Code Institute - to give me their initial thoughts and feedback as users of my website. 
@@ -102,6 +106,7 @@ Mobile:
 
 9. All images contain alt - text to describe basic image.
 
+<hr>
 
 # IV) Testing
 Lighthouse Website Performance Results: WebPageTest
@@ -118,12 +123,15 @@ Lighthouse Website Performance Results: WebPageTest
 
 ![image](https://user-images.githubusercontent.com/97599832/218317962-f7c804dd-0e81-414a-88c6-5ac62a4c2b9b.png)
 
+<hr>
+
 ### W3C CSS Validator: https://jigsaw.w3.org/css-validator/
 ![image](https://user-images.githubusercontent.com/97599832/218318510-50b68c22-8e09-4f86-a34d-7a77cde3035d.png)
 
 - Fix CSS validator issues
 ![image](https://user-images.githubusercontent.com/97599832/218319006-d017daae-1e14-4f52-821f-d7da3cc636cd.png)
 
+<hr>
 
 # **V) Technology and Tools Used**
 1. HTML
@@ -135,6 +143,7 @@ Lighthouse Website Performance Results: WebPageTest
 7. Font Awesome (icons)
 8. Testing: Chrome Dev Tools and W3C CSS Validator
 
+<hr>
 
 # **VI) Acknowledgements and Code Credit**
 1. Credit and thanks to Valerie Turner for his Artwork featured on this website.
