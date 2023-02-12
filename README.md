@@ -94,6 +94,12 @@ Lighthouse Website Performance Results: WebPageTest
 1. Frontpage.html
 ![image](https://user-images.githubusercontent.com/97599832/218317904-7f0789d4-dfe3-41eb-ae96-fe9f01504cb1.png)
 
+2. Cards.html
+![image](https://user-images.githubusercontent.com/97599832/218317938-3d4e9124-1f9b-410f-b243-ab86d8be9bd4.png)
+
+3. Paintings.html
+4. [image](https://user-images.githubusercontent.com/97599832/218317962-f7c804dd-0e81-414a-88c6-5ac62a4c2b9b.png)
+
 
 
 # **VI) Acknowledgements and Code Credit**
