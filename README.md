@@ -86,12 +86,13 @@ Mobile:
 7. Font Awesome (icons)
 8. Testing: Chrome Dev Tools and W3C CSS Validator
 
-# **V) Testing
+# V) Testing
 Lighthouse Website Performance Results: WebPageTest
 ![image](https://user-images.githubusercontent.com/97599832/218317113-464e3bec-a0d1-4ef5-9993-e43331f778f7.png)
 
 ### Nu HTML Validator 
 1. Frontpage.html
+![image](https://user-images.githubusercontent.com/97599832/218317904-7f0789d4-dfe3-41eb-ae96-fe9f01504cb1.png)
 
 
 
