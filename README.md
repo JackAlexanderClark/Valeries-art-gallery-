@@ -41,16 +41,15 @@
 
 ## User Stories
 <h3>First-time Website Visitor:</h3>
-<ul>As a first-time website visitor, I am interested in learning more about the artist and their work. I want to get a sense and appreciation of their style and see examples of their art work, whether paintings or cards.
+<ul>As a first-time website visitor, I would want to learn more about the artist and their work. I want to get a sense and appreciation of their style and see examples of their art work, whether paintings or cards.
 <li>I will want to view an image featuring one of the artist's pieces on the home page, to immediately see their style.</li>
 <li>I want to explore the navigation menu to find out more about the artist, including their biography, art and their contact details.</li>
-<li>I will want to view a "Biography" page to learn about the artist's background, inspiration, and creative process for their art.</li>
+<li>I will want a "Biography" page to learn about the artist's background, inspiration, and creative process for their art.</li>
 <li>Finally, I want to be able to contact the artist by being able to contact email address on the "Contact" page.</li>
 </ul>
   
 <h3>Frequent Website Visitor:</h3>
 <ul>As a frequent website visitor, I am a fan of the artist and want to stay up-to-date on their latest work.
-  <li>I am a fan of the artist and want to stay up-to-date on their latest work.</li>
   <li>I want an easy and convenient way to contact the artist.</li>
 </ul>
   
