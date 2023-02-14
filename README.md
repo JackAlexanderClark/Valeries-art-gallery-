@@ -112,6 +112,11 @@ Mobile:
 Lighthouse Website Performance Results: WebPageTest
 ![image](https://user-images.githubusercontent.com/97599832/218317113-464e3bec-a0d1-4ef5-9993-e43331f778f7.png)
 
+From testing the website was slow loading, from above lighthouse test.
+![image](https://user-images.githubusercontent.com/97599832/218862479-efef2e1e-e3e8-4f2f-b7f7-e3cfbc673155.png)
+
+I then added html - loading="lazy" to the images to defer their loading.
+
 ### Nu HTML Validator: https://validator.w3.org/nu/
 1. Frontpage.html
 ![image](https://user-images.githubusercontent.com/97599832/218317904-7f0789d4-dfe3-41eb-ae96-fe9f01504cb1.png)
