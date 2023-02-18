@@ -117,6 +117,10 @@ From testing the website was slow loading, from above lighthouse test.
 
 <li>I then added html - loading="lazy" to the images to defer their loading.</li>
 
+![image](https://user-images.githubusercontent.com/97599832/219870669-da2458c6-d66c-4462-9e7d-d69eba91feb5.png)
+
+<hr>
+
 ### Nu HTML Validator: https://validator.w3.org/nu/
 1. Frontpage.html
 ![image](https://user-images.githubusercontent.com/97599832/218317904-7f0789d4-dfe3-41eb-ae96-fe9f01504cb1.png)
