@@ -1,6 +1,8 @@
 # README DOCUMENTATION
 
 # **Milestone Project 1 - User Centric Frontend Development**
+## Static Website to display the work of an artist for people to explore.
+### (HTML/CSS)
 # Author: Jack Clark (Contact Me - jackalexanderclark@protonmail.com)
 
 # Project website link (GitHub Pages): https://jackalexanderclark.github.io/Valeries-art-gallery-/frontpage.html
@@ -8,11 +10,26 @@
 ## Website Device Mockup
 ![all-devices-white (1)](https://user-images.githubusercontent.com/97599832/204106003-dfcbb75c-4d19-475f-b8b7-1c5d8766af38.png)
 
+<hr>
+
+## Contents:
+<ol>
+  <li>Introduction</li>
+  <li>Design</li>
+  <li>User Stories and Feedback</li>
+  <li>Testing</li>
+  <li>Technology</li>
+  <li>Acknowledgements</li>
+</ol>
+<hr>
+
 # **I) Introduction and Project Goals**
 1. For my user centric frontend project, I decided to build a website to display my grandmothers artwork, from the start I knew I wanted a 3 page layout; firstly an introductory home page with a basic biography and information related to influences and styles, a second gallery page for her card collection and a third page for her framed paintings.
 2. The main story for design I had was two pillars; viewing and learning. That it is easily accessible to straight away understand the kind of art displayed. I also refrained from adding to many effects that would over-saturated the artwork and hence kept a modest and simplistic approach.
 3. My project went through two phases of iteration. I originally designed my art gallery website statically with HTML and CSS without bootstrap. Primarily, through the lens of my laptop - which would later lead to issues with mobile and iPad devices etc.
 4. After feedback from users and my Code Institute tutors, I rebuilt my website from the ground up but this time using Bootstrap templates (product and album), this gave my second website a much better flow and layout and all scaled well with other devices.
+
+<hr>
 
 # **II) Planning and Design Philosophy**
 1. I took a lot of input from my grandmother "Valerie Turner", she gave me her ideas and agreed with my approach of a 3 page layout. She also was clear that her favourite colours lie within the purple and violet family. This directed me to use shades of purples and violets in the website backgrounds. I used the tool: "https://redketchup.io/color-picker" to find HEX colours and related shades for visual appeal and consistency.
@@ -22,7 +39,22 @@
 
 3. I decided on a page structure of 3 elements; firstly a navigation bar header with links to the other pages, secondly a body section which would contain all the elements such as text and images and thirdly a footer with contact details and an option to return to the top of the page.
 
-
+## User Stories
+<h3>First-time Website Visitor:</h3>
+<ul>As a first-time website visitor, I would want to learn more about the artist and their work. I want to get a sense and appreciation of their style and see examples of their art work, whether paintings or cards.
+<li>I will want to view an image featuring one of the artist's pieces on the home page, to immediately see their style.</li>
+<li>I want to explore the navigation menu to find out more about the artist, including their biography, art and their contact details.</li>
+<li>I will want a "Biography" page to learn about the artist's background, inspiration, and creative process for their art.</li>
+<li>Finally, I want to be able to contact the artist by being able to contact email address on the "Contact" page.</li>
+</ul>
+  
+<h3>Frequent Website Visitor:</h3>
+<ul>As a frequent website visitor, I am a fan of the artist and want to stay up-to-date on their latest work.
+  <li>I want an easy and convenient way to contact the artist.</li>
+</ul>
+  
+<hr>
+  
 # **III) Improvements from User Feedback**
 1. I asked a variety of people from my workplace to my family and for the most impartial feedback tutors from Code Institute - to give me their initial thoughts and feedback as users of my website. 
 2. **User 1**: Liked the appearance of my original gallery design:
@@ -74,7 +106,39 @@ Mobile:
 
 9. All images contain alt - text to describe basic image.
 
-# **IV) Technology and Tools Used**
+<hr>
+
+# IV) Testing
+Lighthouse Website Performance Results: WebPageTest
+![image](https://user-images.githubusercontent.com/97599832/218317113-464e3bec-a0d1-4ef5-9993-e43331f778f7.png)
+
+From testing the website was slow loading, from above lighthouse test.
+![image](https://user-images.githubusercontent.com/97599832/218862479-efef2e1e-e3e8-4f2f-b7f7-e3cfbc673155.png)
+
+<li>I then added html - loading="lazy" to the images to defer their loading.</li>
+
+### Nu HTML Validator: https://validator.w3.org/nu/
+1. Frontpage.html
+![image](https://user-images.githubusercontent.com/97599832/218317904-7f0789d4-dfe3-41eb-ae96-fe9f01504cb1.png)
+
+2. Cards.html
+![image](https://user-images.githubusercontent.com/97599832/218317938-3d4e9124-1f9b-410f-b243-ab86d8be9bd4.png)
+
+3. Paintings.html
+
+![image](https://user-images.githubusercontent.com/97599832/218317962-f7c804dd-0e81-414a-88c6-5ac62a4c2b9b.png)
+
+<hr>
+
+### W3C CSS Validator: https://jigsaw.w3.org/css-validator/
+![image](https://user-images.githubusercontent.com/97599832/218318510-50b68c22-8e09-4f86-a34d-7a77cde3035d.png)
+
+- Fix CSS validator issues
+![image](https://user-images.githubusercontent.com/97599832/218319006-d017daae-1e14-4f52-821f-d7da3cc636cd.png)
+
+<hr>
+
+# **V) Technology and Tools Used**
 1. HTML
 2. CSS
 3. JavaScript
@@ -84,13 +148,11 @@ Mobile:
 7. Font Awesome (icons)
 8. Testing: Chrome Dev Tools and W3C CSS Validator
 
-# **V) Acknowledgements and Code Credit**
-1. Credit and thanks to Valerie Turner for his Artwork featured on this website.
+<hr>
+
+# **VI) Acknowledgements and Code Credit**
+1. Credit and thanks to Valerie Turner for her Artwork featured on this website.
 2. Credit for GetBootstrap Templates; Album and Product. Source: "https://getbootstrap.com/docs/4.6/examples/album/", "https://getbootstrap.com/docs/4.6/examples/product/".
 3. Credit for Sticky Navigation Bar. Source "https://www.w3schools.com/howto/howto_js_navbar_sticky.asp"
-
-
-
-
 
 
