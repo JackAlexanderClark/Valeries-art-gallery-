@@ -141,18 +141,18 @@ From testing the website was slow loading, from above lighthouse test.
 # **V) Technology and Tools Used**
 1. HTML
 2. CSS
-3. JavaScript
-4. Chrome Dev Tools
-5. Version Control, IDE and Deployment: GitHub, GitPod and GitHub Pages
-6. Bootstrap Framework
-7. Font Awesome (icons)
-8. Testing: Chrome Dev Tools and W3C CSS Validator
+3. Chrome Dev Tools
+4. Version Control, IDE and Deployment: GitHub, GitPod and GitHub Pages
+5. Bootstrap Framework
+6. Font Awesome (icons)
+7. Testing: Chrome Dev Tools and W3C CSS Validator
 
 <hr>
 
 # **VI) Acknowledgements and Code Credit**
 1. Credit and thanks to Valerie Turner for her Artwork featured on this website.
 2. Credit for GetBootstrap Templates; Album and Product. Source: "https://getbootstrap.com/docs/4.6/examples/album/", "https://getbootstrap.com/docs/4.6/examples/product/".
-3. Credit for Sticky Navigation Bar. Source "https://www.w3schools.com/howto/howto_js_navbar_sticky.asp"
+
+
 
 
