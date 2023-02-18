@@ -23,44 +23,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-    <!-- Bootstrap core CSS -->
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
-
     <style>
-
-     /* Code Source: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp  */
-    /* Style the navbar */
-    .navbar {
-        overflow: hidden;
-      }
-
-      /* Navbar links */
-      .navbar a {
-        float: left;
-        display: block;
-        text-align: center;
-        padding: 14px;
-        text-decoration: none;
-      }
-
-      /* Page content */
-      .content {
-        padding: 16px;
-      }
-
-      /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-      .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-      }
-
-      /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-      .sticky + .content {
-        padding-top: 60px;
-      }
-      /* end of w3schools code */
 
       /* Credit and Source to GetBootstrap: https://getbootstrap.com/docs/4.6/examples/product/" */
       .bd-placeholder-img {
@@ -96,7 +59,7 @@
     
     <!-- Laptop and Ipad navbar used until certain pixel width -->
     <div class="laptop-nav-bar">
-      <nav class="site-header sticky-top py-1 navbar" style="background-color: #ece8f8;">
+      <nav class="site-header sticky-top py-1 navbar" style="background-color: #ece8f8; position: sticky;">
         <div class="container-fluid d-flex flex-column flex-md-row justify-content-between">
           <a class="py-2" href="#" aria-label="Product">
               <img class="weblogo" src="images/val-logo.jpg" alt="vals-web-logo" style="border-radius: 50%; height: 100px; width: 100px;">
@@ -111,7 +74,7 @@
 
     <!-- Mobiles and Iphone Navbar, hidden by media query until certain pixel width and vice versa -->
     <div class="mobile-nav-bar">
-      <nav class="site-header sticky-top py-1 navbar" style="background-color: #ece8f8;">
+      <nav class="site-header sticky-top py-1 navbar" style="background-color: #ece8f8; position: sticky;">
         <div class="container-fluid d-flex flex-column flex-md-row justify-content-between">
           <a class="py-2" href="#" aria-label="Product">
             <img class="weblogo" src="images/val-logo.jpg" alt="vals-web-logo" style="border-radius: 50%; height: 50px; width: 50px;">
@@ -127,7 +90,7 @@
 <!-- homepage introduction image -->
 <div class="row">
     <br>
-    <img id="homepage" class=".img-fluid" style="height: 300px; display:block; margin-left: auto; margin-right: auto; width: 600px;" src="images/venice-card.jpg" alt="homepage image">
+    <img id="homepage" class=".img-fluid" style="height: 300px; display:block; margin-left: auto; margin-right: auto; width: 600px;" src="images/venice-card.jpg" alt="homepage image" loading="lazy">
 </div>
 
 <!-- need to remove and link to style.css file -->
@@ -151,7 +114,7 @@
           <br>
           <br>
       </div>
-      <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">   <img src="images/wave-card.jpg" alt="wave-image" style='height: 100%; width: 100%; object-fit: contain;'>
+      <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">   <img src="images/wave-card.jpg" alt="wave-image" style='height: 100%; width: 100%; object-fit: contain;' loading="lazy">
       </div>
     </div>
     <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
@@ -165,7 +128,7 @@
           efforts, but also with a burgeoning interest in Classical art, even around
           the hard-working career and family days.</p>
       </div>
-      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;padding-bottom: 5px;"> <img src="images/Iona.jpg" alt="iona-image" style='height: 100%; width: 100%; object-fit: contain;'> </div>
+      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;padding-bottom: 5px;"> <img src="images/Iona.jpg" alt="iona-image" style='height: 100%; width: 100%; object-fit: contain;' loading="lazy"> </div>
     </div>
   </div>
   
@@ -185,7 +148,7 @@
           I like to sketch with charcoal and for quick compositions and
           portrait, use Pastels.</p>
       </div>
-      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"><img src="images/poppies-card.jpg" alt="poppies-image" style='height: 100%; width: 100%; object-fit: contain;'></div>
+      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"><img src="images/poppies-card.jpg" alt="poppies-image" style='height: 100%; width: 100%; object-fit: contain;' loading="lazy"></div>
     </div>
 
     <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" style="background-color:#969DC8">
@@ -202,20 +165,18 @@
           “the English Scene”.</p>
           <br>
       </div>
-      <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"><img src="images/toll-card.jpg" alt="toll-image" style='height: 100%; width: 100%; object-fit: contain;'></div>
+      <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"><img src="images/toll-card.jpg" alt="toll-image" style='height: 100%; width: 100%; object-fit: contain;' loading="lazy"></div>
     </div>
   </div>
 
 <!-- style to center the youtube video in middle of the screen -->
 <hr>
-<section>
-  <div id="youtube-video" style="display:grid; place-items: center; align-content: center;">
+  <div class="container" id="youtube-video" style="display:grid; place-items: center; align-content: center; ">
       <h2 style="font-family: 'Times New Roman', Times, serif;">
         <b>Tintagel, Cornwall</b> <i class="fa-solid fa-map-location-dot"></i>
       </h2>
       <iframe style="width: 60%!important; height: 400px;" src="https://www.youtube.com/embed/0qSLB9uNAGU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
   </div>
-</section>
 
 <!-- footer contact details and tintagel location information -->
 <footer>
@@ -239,28 +200,9 @@
 </body>
         <!-- CDN links -->
         <!-- bootstrap links -->
-        <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://kit.fontawesome.com/df070f2a43.js" crossorigin="anonymous"></script>
-
-        <script>
-            // Code credit and source: "https://www.w3schools.com/howto/howto_js_navbar_sticky.asp"
-            window.onscroll = function() {myFunction()};
-            
-            var navbar = document.getElementsByClassName("navbar");
-            var sticky = navbar.offsetTop;
-            
-            function myFunction() {
-              if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky");
-              } else {
-                navbar.classList.remove("sticky");
-              }
-            }
-            
-      </script>
-        
   </body>
 </html>

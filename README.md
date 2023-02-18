@@ -154,5 +154,3 @@ From testing the website was slow loading, from above lighthouse test.
 2. Credit for GetBootstrap Templates; Album and Product. Source: "https://getbootstrap.com/docs/4.6/examples/album/", "https://getbootstrap.com/docs/4.6/examples/product/".
 
 
-
-
