@@ -7,7 +7,6 @@
   position: relative;
   text-align: center;
   color: #8558A1; 
-  font-family:'Times New Roman', Times, serif; 
   font-size: 76px; 
   backface-visibility: hidden;
   font-weight: normal; 
@@ -24,7 +23,7 @@ img {
 }
 
 /* ---text styling --- */
-p, h2, h4 {
+* {
 font-family: 'Times New Roman', Times, serif;
 }
 
@@ -34,19 +33,19 @@ font-style: italic;
 }
 
 .active > h2 {
-background-color: #ecc1e1;
-position: relative;
-border-style: groove;
-border-color:aliceblue;
+  background-color: #ecc1e1;
+  position: relative;
+  border-style: groove;
+  border-color:aliceblue;
 }
 
 .img-text {
-text-align: center;
-font-style: italic;
+  text-align: center;
+  font-style: italic;
 }
 
 span {
-text-align: center;
+  text-align: center;
 }
 
 /* --- mobile and laptop navbar devices --- */
