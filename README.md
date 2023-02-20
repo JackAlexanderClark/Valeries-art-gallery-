@@ -41,6 +41,7 @@
 
 3. I decided on a page structure of 3 elements; firstly a navigation bar header with links to the other pages, secondly a body section which would contain all the elements such as text and images and thirdly a footer with contact details and an option to return to the top of the page.
 
+## Desktop 
 ### Home Page 
 ![image](https://user-images.githubusercontent.com/97599832/220116476-385fafdc-cade-4ecb-b08e-ce4a97c24ee8.png)
 <hr>
@@ -52,6 +53,17 @@
 ### Paintings
 ![image](https://user-images.githubusercontent.com/97599832/220116900-07c1e807-041e-480d-8dc5-40aef1afcf29.png)
 <hr>
+
+## Mobile
+### Home Page
+![image](https://user-images.githubusercontent.com/97599832/220121923-adb3bd7f-2cc9-41cb-81a4-1d5530e5c291.png)
+<hr>
+
+### Cards
+![image](https://user-images.githubusercontent.com/97599832/220122723-664eee74-541c-40d7-89d0-483ba06a02fe.png)
+
+### Paintings
+![image](https://user-images.githubusercontent.com/97599832/220123097-5c8bfef2-2eb9-43f1-bce1-21dcb498a01f.png)
 
 
 ## User Stories
