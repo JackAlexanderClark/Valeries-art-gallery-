@@ -45,11 +45,11 @@
 ![image](https://user-images.githubusercontent.com/97599832/220116476-385fafdc-cade-4ecb-b08e-ce4a97c24ee8.png)
 <hr>
 
-### Paintings
+### Cards
 ![image](https://user-images.githubusercontent.com/97599832/220116784-f30aad7e-5f75-4aab-919e-04f8db1f3a3e.png)
 <hr>
 
-### Cards
+### Paintings
 ![image](https://user-images.githubusercontent.com/97599832/220116900-07c1e807-041e-480d-8dc5-40aef1afcf29.png)
 <hr>
 
