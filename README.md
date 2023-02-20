@@ -41,6 +41,19 @@
 
 3. I decided on a page structure of 3 elements; firstly a navigation bar header with links to the other pages, secondly a body section which would contain all the elements such as text and images and thirdly a footer with contact details and an option to return to the top of the page.
 
+### Home Page 
+![image](https://user-images.githubusercontent.com/97599832/220116476-385fafdc-cade-4ecb-b08e-ce4a97c24ee8.png)
+<hr>
+
+### Paintings
+![image](https://user-images.githubusercontent.com/97599832/220116784-f30aad7e-5f75-4aab-919e-04f8db1f3a3e.png)
+<hr>
+
+### Cards
+![image](https://user-images.githubusercontent.com/97599832/220116900-07c1e807-041e-480d-8dc5-40aef1afcf29.png)
+<hr>
+
+
 ## User Stories
 <h3>First-time Website Visitor:</h3>
 <ul>As a first-time website visitor, I would want to learn more about the artist and their work. I want to get a sense and appreciation of their style and see examples of their art work, whether paintings or cards.
