@@ -29,6 +29,8 @@
 3. My project went through two phases of iteration. I originally designed my art gallery website statically with HTML and CSS without bootstrap. Primarily, through the lens of my laptop - which would later lead to issues with mobile and iPad devices etc.
 4. After feedback from users and my Code Institute tutors, I rebuilt my website from the ground up but this time using Bootstrap templates (product and album), this gave my second website a much better flow and layout and all scaled well with other devices.
 
+### Business Goals:
+<li>To upload the business owners products (artwork) to a website for people to visit and engage with.</li>
 <hr>
 
 # **II) Planning and Design Philosophy**
