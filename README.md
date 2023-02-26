@@ -200,7 +200,7 @@ From testing the website was slow loading, from above lighthouse test.
 
 <hr>
 
-# **VI) Deployment
+# VI) Deployment
 <ol>
   <li>This project was created from a template provided by code institute with useful extensions installed in the IDE Gitpod.</li>
   <li>A test server is run using "python3 -m http.server" in the terminal.</li>
