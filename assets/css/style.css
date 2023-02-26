@@ -22,6 +22,11 @@ img {
   cursor: pointer;
 }
 
+.icon-size {
+  height: 100px;
+  width: 100px;
+}
+
 /* ---text styling --- */
 * {
 font-family: 'Times New Roman', Times, serif;
@@ -52,9 +57,11 @@ span {
 .mobile-nav-bar{
   display: none;
 }
+
 .laptop-nav-bar{
   display: inline;
 }
+
 @media only screen 
   and (max-width : 667px) 
   and (orientation : portrait) 
