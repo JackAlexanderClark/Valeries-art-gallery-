@@ -19,6 +19,7 @@
   <li>User Stories and Feedback</li>
   <li>Testing</li>
   <li>Technology</li>
+  <li>Deployment</li>
   <li>Acknowledgements</li>
 </ol>
 <hr>
